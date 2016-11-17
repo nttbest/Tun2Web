@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/************ init ***************/
+
+html, body, div, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+html,body {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+body {
+  font-family: "Microsoft YaHei";
+}
+a:focus, input:focus, textarea:focus {
+  -webkit-tap-highlight-color: transparent;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+a { 
+  text-align:center; 
+  text-decoration:none;
+}

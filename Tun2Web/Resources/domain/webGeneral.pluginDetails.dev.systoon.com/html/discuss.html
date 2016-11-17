@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta id="viewport" name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+		<title>评论</title>
+		<link rel="stylesheet" href="../css/pluginDetail.css" />
+	</head>
+	<body>
+		<div class="shareList">
+			<div class="stars" id="selectstar" style="display:none">
+				星级评分：
+				<a tag="1"><img src="../assets/pluginDetails/starde.png"></a>
+				<a tag="2"><img src="../assets/pluginDetails/starde.png"></a>
+				<a tag="3"><img src="../assets/pluginDetails/starde.png"></a>
+				<a tag="4"><img src="../assets/pluginDetails/starde.png"></a>
+				<a tag="5"><img src="../assets/pluginDetails/starde.png"></a>
+			</div>
+			<div class="txtPublisherCont">
+				<textarea id="txtPublisher" class="txtPublisher" placeholder="在此写下你的评价..."></textarea>
+				<p id="num">200字</p>
+			</div>
+			<ul class="tabbedGroup">
+                <li class="selectedTab" id="submitBtn">提交</li>
+            </ul>
+			<div id="listCon">	
+			</div>
+		</div>
+		<script src="../../webGeneral.public.dev.systoon.com/js/jquery-1.11.1.min.js"></script>
+		<script src="../../webGeneral.public.dev.systoon.com/Mwap/com/systoon/Mwap.js"></script>
+		<script type="text/javascript" src="../js/discuss.js"></script>
+		<script type="text/javascript">
+			Mwap.init();
+		</script>
+	</body>
+</html>

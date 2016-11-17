@@ -1,0 +1,645 @@
+body{font-size: 62.5%;font-family:"microsoft yahei" ;background: #f3f4f5;color: #000;}
+body.wriBg{background: #ffffff}
+ul dl dd dt li ol div{margin: 0;padding: 0;}
+/*header*/
+.wrapper{overflow: auto !important;}
+.hpHeader{margin:0;width:100%;height:4rem;padding:0px 3%;background: #2463b9;overflow: hidden;position: fixed;top: 0;z-index: 999;}
+.hpLeft{float: left;padding-left: .8rem;margin-top: .7rem;margin-bottom: 0;font-size: 1.85rem;}
+.hpRight{float: right;font-size: 1.7rem;color: #fff;margin-right: .75rem;position: absolute;right: 1rem;top: 1rem;}
+.hpsearch{margin: 0.55rem 7.35rem;position: relative;}
+.hpsearch .inp{display: block;font-size: 1.4rem;line-height: 1.4rem;padding: .7rem 2.5rem;width: 100%;max-width: 100%;color: #A8A8A8;border-radius: 4px;border: none;}
+.fangToonIcons{background: url(http://static1.sqtoon.com/ftoonApp/images/Search1.png) no-repeat;display: block;margin: 5px;background-size: 1.5rem auto;}
+.hpsearch .search{background-position: 0 0;width: 26px;height: 26px;top: .35rem;position: absolute;left: .45rem;cursor: pointer;}
+/*content*/
+.content{width: 100%;padding: 4rem 0 0rem 0;overflow: hidden;zoom: 1;margin: 0 0 6rem 0;}
+.content.main{margin: 0;}
+.content.bgCon{background: #ffffff}
+.content .bennertit{margin:3rem 0 1rem 1.5rem ;font-size: 1.4rem;color: #8E8E93;}
+
+.bannerBox{width: 100%;margin: 0;padding: 0;height: 24rem;background:#f3f4f5;position: relative;overflow: hidden;}
+.bannerBox img,.picList li img{display: block;float: left;width: 100%;height: 24rem;}
+
+.cont1{margin:1.5rem 1.5rem;border-bottom:1px solid #dbdbdb;overflow: hidden;}
+.homePR{margin:0 5% 1rem;text-align:center;display: -webkit-box;-webkit-box-sizing: border-box;-webkit-box-pack: justify;}
+.homePR a{color: #333333;}
+
+.circleBox dt{width:6rem;height:6rem;border-radius: 50%;padding:1.25rem;}
+.circleBox dt img{width: 3rem;height: 3rem;}
+.circleBox dd,.blueCir dd{margin: 0.625rem 0 0.938px 0;font-size: 1.5rem; }
+.orange{background: #ffa549;}
+.pink{background:#ff6464 ;}
+.purple{background: #b775e4;}
+
+.cont2{width: 100%;border-bottom:1px solid #dbdbdb;overflow: hidden;}
+
+.blueCir dt{width:5rem;height:5rem;border-radius: 50%;padding:1.1rem .93rem;border: 1px solid #5082C7;}
+
+.phoneNum{color: #333;margin: 1.25rem 0 6.1rem;border: solid #DBDBDB;background: #fff;border-width: 1px 0;font-size: 1.6rem;font-weight: 600;text-align: center;}
+.phoneNum p{display: inline-block;line-height: 2;padding: 1.5rem 0;}
+.dianHua{width: 40px;height: 34px;}
+.fangToonIcons1{background: url(http://static1.sqtoon.com/ftoonApp/images/telephone.png) center 0.4rem no-repeat;float: left;}
+.phoneNum strong{color: #FF6464;}
+
+/*footer*/
+.footer{width:100%;background:#fff;position: fixed;bottom: 0px;left:0;overflow: hidden;zoom: 1;}
+.footer ul{padding:0 1.25rem;height:5rem;text-align:center;display: -webkit-box;-webkit-box-sizing: border-box;-webkit-box-pack: justify;}
+.footer ul li{display: -webkit-box;padding:15px 10px 10px;position: relative;cursor:pointer;background-size: 2rem auto;}
+.footer ul .loca{background: url(http://static1.sqtoon.com/ftoonApp/images/index.png) center .625rem no-repeat;background-size: 2rem auto;}
+.footer ul .two{background: url(http://static1.sqtoon.com/ftoonApp/images/shejiao.png)  center .625rem no-repeat;background-size: 2rem auto;}
+.footer ul .third{background: url(http://static1.sqtoon.com/ftoonApp/images/center.png)  center .625rem no-repeat;background-size: 2rem auto;}
+.footer ul .four{background: url(http://static1.sqtoon.com/ftoonApp/images/more.png) center .625rem no-repeat;background-size: 2rem auto;}
+.footer ul .twoActive a,.footer ul .NearbyActive a,.footer ul .thirdActive a,.footer ul .fourActive a{color: #2463b9;}
+.footer ul .NearbyActive{background: url(http://static1.sqtoon.com/ftoonApp/images/indexActive.png) center .625rem no-repeat;background-size: 2rem auto;}
+.footer ul .twoActive{background: url(http://static1.sqtoon.com/ftoonApp/images/sheijiaoActive.png) center .625rem no-repeat;background-size: 2rem auto;}
+.footer ul .thirdActive{background: url(http://static1.sqtoon.com/ftoonApp/images/centerActive.png) center .625rem no-repeat;background-size: 2rem auto;}
+.footer ul .fourActive{background: url(http://static1.sqtoon.com/ftoonApp/images/moreActive.png) center .625rem no-repeat;background-size: 2rem auto;}
+.footer ul li a{display:block;text-decoration: none;color: #999;font-family: "microsoft yahei";font-size: 1.25rem;margin: 1.5rem 0 0 0;}
+
+/*Release release*/
+.header{line-height:4rem;font-size:1.75rem;position: fixed;top: 0;z-index: 999;text-align:center;display: -webkit-box;-webkit-box-sizing: border-box;-webkit-box-pack: justify;overflow: hidden;zoom: 1;position: fixed;top: 0;z-index: 999;}
+.header a{display: -webkit-box;text-decoration: none;text-shadow: 0,-1 ,0,rgba(0,0,0,5);color: #fff;}
+
+.conMs{margin: 1.5rem 0 0 0;}
+.conM{margin: 3rem 0 0 0;}
+.cyList{width: 100%;border:solid #DBDBDB;background: #fff;border-width: 0.1rem  0 ;}
+.cyList li{height: 4.4rem;line-height:4.4rem;padding: 0 0 0 1.5em;font-size: 1.6rem;position: relative;}
+.borderLine{width: 100%;border-bottom: 1px solid #DBDBDB;}
+.cyList li:last-child .borderLine{border: none;}
+.cyList li:last-child{border: none;}
+.cyList li .selected,.nameBox .selected{width: 1.6rem;height: 2rem;float: right;display:block;margin: 1.6rem 1.5rem 0 0;background: url(http://static1.sqtoon.com/ftoonApp/images/blueyes.png) no-repeat;background-size:1.6rem auto;}
+.cyList li i{float: right;}
+.cyList li input{line-height: 4.4rem;}
+.cyList li label{padding: 0 0 0 1rem;}
+.cyList li.houses{height:14rem;padding:1.5rem 0}
+.cyList li.houses .houseDet{display: inline-block;}
+.cyList li.houses .houseDet img{width:9.5rem; height:9.5rem;border: solid 1px #dbdbdb;}
+.cyList li.houses .houseDet p{text-align: center;line-height: 2rem;}
+.Arrow{width: .9rem;height: 1.5rem;background: url(http://static1.sqtoon.com/ftoonApp/images/arrowright.png) no-repeat;background-size:.9rem auto;margin: 1.5rem 1rem 0 0;}
+.cyList li font{color: #007AFF;}
+.more .cyList li.noMar{margin:0;height: auto;line-height: auto;}
+.more .cyList li .tool{width: 49%;text-align: center;padding:10rem 0 0 0;display: inline-block;margin: 1rem 0;}
+.more .cyList li .tool.loan{border-right:solid 1px #dbdbdb; background:url(http://static1.sqtoon.com/ftoonApp/images/loan.png) center 1rem no-repeat;background-size:7rem auto;}
+.more .cyList li .tool.tax{background:url(http://static1.sqtoon.com/ftoonApp/images/tax.png) center 1rem no-repeat;background-size:10rem auto;}
+.more .conM li{text-indent:2.5rem; background-size: 2rem;;}
+.textbox{border-bottom: 1px solid #DBDBDB;}
+.TextField{width:96%;height: 15rem;margin: 0 2%;padding: 0;border: none;resize: none;font-size: 1.6rem;color: #333;}
+
+.searchBox{width: 100%;height: 4.4rem;background: #ededed;border-bottom: 1px solid #DBDBDB;position: relative;}
+.searchBox.noBor{border-bottom: none;}
+.searchBox input{height: 3rem;border: none;background: #fff;width: 86%;margin: 0.7rem 2%;border-radius: 0.5rem;text-align: center;color: #8e8e93;font-size: 1.6rem;background:#fff url(http://static1.sqtoon.com/ftoonApp/images/Search1.png)15% center  no-repeat;background-size: 1.5rem auto;}
+.hasBgInp input{background: #fff url(http://static1.sqtoon.com/ftoonApp/images/Search1.png)37% center no-repeat;background-size: 1.5rem auto;text-indent: 43%;}
+.hasBgInp input[type=text]:focus{background:#fff url(http://static1.sqtoon.com/ftoonApp/images/Search1.png)37% center  no-repeat !important;background-size: 1.5rem auto !important;padding:0 1% 0 30%;text-indent: 0 !important;}
+
+.searchBox input[type=text]:focus{background:#fff url(http://static1.sqtoon.com/ftoonApp/images/Search1.png)2% center  no-repeat;background-size: 1.5rem auto;text-indent: 2rem;}
+.xcmcTitle{padding: 1.8rem 0 0.8rem 0;margin:0 1.5rem;font-size: 1.4rem;color: #8e8e93;}
+
+.inputDiv{width: 85%;float: left;position: relative;}
+.inputDiv input{text-indent: 3.5rem;position: relative;background:#fff url(http://static1.sqtoon.com/ftoonApp/images/Search1.png)15% center  no-repeat;background-size: 1.5rem auto;}
+.noBgBox span{width:1.4rem;height:1.4rem;position: absolute;top: 1.5rem;right: 30%;background: url(http://static1.sqtoon.com/ftoonApp/images/Clear.png) no-repeat;background-size: 1.4rem auto;}
+.cancleA{text-decoration: none;color: #007AFF;font-size: 1.6rem;line-height: 4.4rem;}
+
+.addInp{height: 4.4rem;background: #fff;border: solid #DBDBDB;border-width: 0.1rem 0;margin: 3rem 0 0 0 ;}
+.addInp textarea::-webkit-input-placeholder{font-size: 1.4rem;}
+.addInp input{width: 96%;margin: 0 1.5rem;padding:1.1rem 0;border: none;font-size: 1.6rem;color: #BEBEBE;}
+.cyList li input[type=checkbox],.agreement input[type=checkbox],.selectlist input[type=checkbox]{width: 2.2rem;height: 2.2rem;-webkit-appearance: none;background: url(http://static1.sqtoon.com/ftoonApp/images/Shape3.png) no-repeat;vertical-align: middle;background-size: 2rem auto;}
+.cyList li input[type=radio],.agreement input[type=radio],.selectlist input[type=radio]{width: 2.2rem;height: 2.2rem;-webkit-appearance: none;background: url(http://static1.sqtoon.com/ftoonApp/images/Shape3.png) no-repeat;vertical-align: middle;background-size: 2rem auto;}
+.cyList li input[type=radio]:checked,.agreement input[type=radio]:checked,.selectlist input[type=radio]:checked{background: url(http://static1.sqtoon.com/ftoonApp/images/checkBoxOK.png) no-repeat;background-size: 2rem auto;}
+.cyList li input[type=checkbox]:checked,.agreement input[type=checkbox]:checked,.selectlist input[type=checkbox]:checked{background: url(http://static1.sqtoon.com/ftoonApp/images/checkBoxOK.png) no-repeat;background-size: 2rem auto;}
+/*content*/
+.addBtn{padding:3.5rem 0;width: 100%;margin: auto;background: #f3f4f5}
+.addBtn.top{z-index: 997;position:absolute;top: 0;background: none;}
+.addBtn .imgCon{margin: auto;width:6.5rem;height:6.5rem;background: url(http://static1.sqtoon.com/ftoonApp/images/add.png) no-repeat;background-size:6.5rem auto;}
+.addBtn .imgCon.write{background: url(http://static1.sqtoon.com/ftoonApp/images/add_write.png) no-repeat;background-size:6.5rem auto;}
+.addBtn img{width:6.5rem;margin: auto;display: block;}
+.addBtn p{text-align: center;width: 100%;margin-top:0.5rem;font-size: 1.4rem;}
+.addBtn p.write{color: #fff}
+.field{overflow: hidden;width:100%;background: #fff;border-bottom: solid 1px #dbdbdb;}
+.field li{padding:0 0 0 1.5rem;height:4.4rem;line-height:4.4rem;font-size:1.6rem;overflow: hidden;zoom:1;}
+.field li .bordertop{border-top: solid 1px #dbdbdb;width: 100%}
+.field li:first-child .bordertop{border-top:none;}
+.field li label{float: left;width:7rem;color: #000000;text-align: left;}
+.field li .right{/*position: absolute;right:1.5rem;*/float: right;margin-right: 1.5rem;}
+.cyList.field li .right span{margin: 0}
+.cyList.field li .right span.blue{color:#2463b9}
+.field li input{outline:none;text-align: right; border: none;color: #bebebe;padding:1.1rem 0;width: 12rem;}
+.field li span{color: #bebebe;padding:1.1rem 0}
+.cyList.field li span{padding:0}
+.field li .right a,.lparr .right a{color: #bebebe;display:block;}
+.field li .right a.arrright,.lparr .right a.arrright{/*float: right;*/ padding: 0 2rem 0 0;background: url(http://static1.sqtoon.com/ftoonApp/images/arrowright.png) right no-repeat;background-size: 1rem;}
+/*.field li a i,.lparr a i{display: block;float: right;margin: 1.5rem 0 0 1rem}*/
+
+.footerbtncon{width: 100%;background-color:#f3f4f5;padding:1.5rem 0}
+.footerbtncon .btncon{padding: 0 1.5rem}
+.footerbtncon .btncon a{font-size:1.7rem;color: #fff;display: block;border-radius: 5px;margin-top: 10px;padding: 10px 0;text-align: center;}
+.footerbtncon .btncon .yellow{background-color:#fc8c2c}
+.footerbtncon .btncon .blue{background-color:#2463b9}
+.footerbtncon .agreement{margin:0 0 3rem 5%;font-size:1.4rem;}
+.footerbtncon .agreement span{color: #838383}
+.footerbtncon .agreement a{color: #007aff;}
+
+.popBody{position: relative;}
+.pop{z-index: 99;}
+.pop.hidden{display: none;}
+.pop .bigPop{background:rgba(0,0,0,0.3);position:fixed;height: 100%;width:100%;z-index:100;bottom: 0}
+.pop .popImg{height: 12.5rem;z-index: 999;top:15rem;position:absolute;width: 100%}
+.pop .twobtn{position: fixed !important;}
+.pop .twobtn,.pop .bottom,.pop .popcon{position:absolute;z-index:150;border-radius: 5px;bottom:5rem;width: 94%;margin-left: 3%;text-align: center;background: #fff;}
+.pop .twobtn a,.pop .bottom a,.pop .popcon p{display: block;padding:1rem 0;color: #007aff;font-size: 1.7rem}
+.pop .twobtn a:first-child,.pop .popcon p:first-child{border-bottom:solid 1px #dbdbdb;}
+.pop .bottom{bottom:0rem;position: fixed;}
+.pop .popcon{width: 80%;margin-left: 10%;top: auto;bottom: 45%;position: fixed;}
+.pop .popcon p{color:#000000}
+.pop .popcon p.btn a{padding:1rem 10%;color: #007aff;}
+.pop .popcon p a:first-child{border-right: solid 1px #dbdbdb;}
+.pop .blackPopbg{border-radius: 5px; margin-left:17%;background:rgba(0,0,0,0.7);z-index:888;height:6rem;width:66%;position: fixed;bottom:35%;}
+.pop .blackPopcon{margin-left:17%;font-size: 1.7rem;color: #fff;z-index:890;position: fixed;bottom:35%;width:66%;text-align: center;padding: 1rem 1.5rem;}
+.fabucon,.tijiaoCon{background: #f3f4f5;text-align: left;width: 90%;margin:0 0 0 5%;}
+.fabucon .title,.tijiaoCon .title{font-size: 1.4rem;color: #8e8e93;margin: 2.5rem 0;}
+.fabucon .bigcircle{margin:4.5rem auto; width:15rem;padding:5rem 0;color: #fff;border-radius: 50%;text-align:center;font-size:4rem;}
+.fabucon .bigcircle.red{background-color: #ff6464;}
+.fabucon .bigcircle.green{background-color: #5dd9bc}
+.tijiaoCon .ok{width:10rem;height: 10rem;margin:5rem auto;background: url(http://static1.sqtoon.com/ftoonApp/images/ok.png);background-size:10rem auto;}
+.tijiaoCon .ok img{width: 100%}
+.fabucon a{color: #007aff; font-size:1.7rem;padding:1rem 0;margin-top:1.5rem; text-align: center;display: block;background: #f3f4f5;border-radius: 5px;border: solid 1px #2463b9;border-radius: 5px;}
+.tijiaoCon a{font-size:1.7rem;padding:1rem 0;color: #fff;background: #2463b9;display: block;text-align: center;border-radius: 5px;}
+.bannerBoxNull{height: 3.6rem;background: #f3f4f5}
+
+.addpic{width: 100%;position: relative;}
+.addpic .popbg{width: 100%;height: 15.5em;background:rgba(0,0,0,0.3);position: absolute;z-index: 333;top: 0;left: 0;}
+.addpic .pics img{width: 100%;height: 15.5rem;}
+
+
+/*guanyuwomen*/
+.topTab{border-bottom: .1rem solid #DBDBDB;background: #fff;padding: .95rem 0;}
+.topTab.nobot{border-bottom: none;}
+.tabBox{width: 100%;height: 2.5rem;display: box;display: -webkit-box;overflow: hidden;}
+.tabBox li{width: 33.33%;line-height:2.5rem;border-right: .1rem solid #DBDBDB;-webkit-box-flex: 1;box-flex: 1;}
+.wid{width: 100%;height: 2.5rem;overflow: hidden;zoom:1;}
+.wid li{width:8rem;line-height:2.5rem;border-right: .1rem solid #DBDBDB;float: left;}
+.tabBox li a,.wid li a{color: #333;font-size: 1.6rem;display: block;text-align: center;}
+.tabBox .active a,.wid .active a{color: #007AFF;}
+.gywmCont,.lxwmCont{margin:1.2rem 1.5rem 0;}
+.gywmCont p{font-size: 1.6rem;color: #333;text-indent: 2rem;margin:0 0 .7rem 0;line-height: 2.5rem;}
+.muban .gywmCont p{text-indent:0;margin:0 0 0.2rem 0;}
+.muban .gywmCont p.mar{margin:0 0 3.5rem 0;}
+.muban .gywmCont p.in{text-indent: 3rem;}
+.Promise{margin: 3rem 0 0 0;}
+.Ptitle,.lxwmCont p{font-size: 1.6rem;color: #333;}
+.mapBox{height: 20rem;width: 100%;}
+.mapBox img{width: 100%;height: 20rem;}
+.Address{float: left;overflow: hidden;}
+.rightC{word-wrap: break-word;word-break: break-all;overflow: hidden;}
+
+.shaixvan .benner .bennerCon{background: #ffffff;padding:0.7rem;overflow:hidden;zoom: 1;border: solid 1px #dbdbdb;}
+.shaixvan .benner .bennerCon.nobg{border: none; background: none;padding: 0 1.5rem;height: 1rem;}
+.shaixvan .benner .bennerCon.nobg .tag,.shaixvan .benner .tag:last-child{border-right: none;}
+.shaixvan .benner .tag{width: 24%;display: inline-block;border-right: solid 1px #DBDBDB;padding:0 0.5rem;}
+.shaixvan .benner .tag .name{font-size: 1.6rem; display: block;height:2.2rem;color: #333333; width: 100%;text-align: center;background: #fff url(http://static1.sqtoon.com/ftoonApp/images/rectangle.png) right no-repeat;background-size:1rem;overflow:hidden;padding: 0 11px 0 0;}
+.shaixvan .benner span.triangle{width:2rem;height:1rem;background:url(http://static1.sqtoon.com/ftoonApp/images/trianglewri.png) no-repeat;margin:auto;}
+.shaixvan .benner span.triangle.show{display: block;}
+.shaixvan .bennerTop .bennerTag{margin:0.5rem 2rem 3rem 2rem; background:#2463b9;border-radius: 5px;border: solid 2px #2463B9;}
+.shaixvan .bennerTop .bennerTag a{padding:0.5rem 0; font-size: 1.4rem;background:#fff; width:49%;display:inline-block;text-align: center;color: #007aff;}
+.shaixvan .bennerTop .bennerTag a.selected{background:#2463B9;color: #FFf}
+.shaixvan .bennerTop .title{margin:0 0 1rem 2rem;font-size: 1.4rem;color: #838383;}
+.shaixvan .searchCon{background: #ffffff;padding: 0 1.5rem;}
+.list{overflow: hidden;zoom: 1;padding: 1.5rem 0;border-bottom: solid 1px #dbdbdb;}
+.list.xiaoquInd{padding:0;}
+.list .xiaoquInd{padding:0;}
+.list.xiaoquInd .VillageNameBox .look{float: right; margin: 1rem 1.5rem 1rem 0; display:inline-block; border: solid 1px #2463b9;color: #007AFF;border-radius: 5px;padding:0.5rem 1.5rem}
+.list.xiaoquInd .VillageNameBox p{margin:1.3rem 0 0 1.5rem }
+.list .left{float: left;margin-right: 1.3rem;position: relative;}
+.list img.leftimg{width: 13rem;height: 11.5rem;}
+.list .detail{margin-left:14rem;}
+.list .detail .title{font-size:1.6rem;margin-top:0.5rem;}
+.list .detail .money{font-size: 1.6rem;}
+.list .detail .tag{font-size:1.4rem;color: #838383;margin: 0.3rem 0;}
+.list .detail .money .red{color: #ff6464;margin-right: 0;}
+.list .detail .money span{margin-right:0.3rem;color: #838383;}
+.list .detail .money strong{font-size: 1.6rem;}
+.list .detail .tagName,.tagName1{padding:1.5rem 0;}
+.list .detail .tagName .tags,.tagName1 .tags{display: inline-block;}
+.list .detail .tagName .tagBg,.tagName1 .tagBg{opacity: 0.7;filter:alpha(opacity=70); -moz-opacity:0.7;position:absolute ;width:6rem;height:2.3rem;background:#2463b9;border-radius: 1.5rem;z-index: 3;}
+.list .detail .tagName a,.tagName1 a{line-height:2.2rem;position:relative ;z-index:5;font-size: 1.4rem;border-radius: 1.5rem;padding:0.5rem 1rem 0.5rem 1.5rem;color: #fff; background:url(http://static1.sqtoon.com/ftoonApp/images/cir_wri.png) 0.7rem center no-repeat;background-size:0.4rem auto;}
+/*shaixuan*/
+.condition{width: 100%;background: #fff;overflow: hidden;}
+.condition ul li{text-align: center;font-size: 1.6rem;border-bottom: 0.1rem solid #DBDBDB;height: 4.4rem;line-height: 4.4rem;}
+.condition ul li a{color: #333;}
+.condition ul .imgCon{height:auto;}
+.condition ul .imgCon img{margin:1.5rem auto;display: block;width: 16rem;height: 11.5rem;}
+.condition .searchfoot{width:80%;margin: auto;text-align: center;padding: 2rem 0}
+.condition .searchfoot input{line-height: 1.6rem; padding: 0.3rem 1rem; color:#8e8e93;font-size:1.6rem;width:5rem;text-align: center;border-radius: 5px;border:none;background: #ededed}
+.condition .searchfoot span{color: #000000;font-size:1.6rem;margin-right:0.5rem;}
+.condition .searchfoot a{background: #2463b9;border-radius: 5px;color: #fff;padding:0.5rem 1.5rem;margin-left:1rem;}
+.leftList{width: 40%;float: left;border-right: 0.1rem solid #DBDBDB;}
+.leftList.half{width: 50%}
+.Ltitle a{color: #007AFF !important;}
+.redtitle a{color: #FF6464 !important;}
+.rightList{overflow: hidden;border-left: 0.1rem solid #DBDBDB;}
+.nobor{border: none;}
+.chooseCont{width:100%;height: 4.4rem;border: solid #DBDBDB;border-width: 0.1rem 0;background: #fff;line-height: 4.4rem;font-size: 1.6rem;text-indent: 2rem;}
+.updateLocation{width: 1.9rem;height: 1.9rem;background: url(http://static1.sqtoon.com/ftoonApp/images/updayeLocation.png) no-repeat;background-size: 1.9rem auto;display: block;float: right;margin: 1.15rem 1.5rem 0 0;}
+.paTitle{padding-top: 3rem;}
+
+/*xuanzejingjiren*/
+.carList,.WTcues{margin: 0 1.5rem;}
+.marinsmall li{margin:1rem 0 0 0 !important;}
+.carList li{margin: 1.5rem 0 0 0;padding: 1rem 0 1rem 1.5rem;background: #fff;border-radius: .5rem;overflow: hidden;}
+.carList li a img{width: 4.4rem;height: 4.4rem;border-radius: 50%;float: left;margin: 0 0.8rem 0 0}
+.nameBox{font-size: 1.6rem;}
+.nameBox i{float: right;}
+.Wtname{color: #000;font-size:1.6rem;font-weight: bold;}
+.WtBs{color: #838383;font-size:1.4rem;}
+.lenameBox{float: left;}
+
+/*weituochenggong*/
+.WTcues{font-size: 1.4rem;color: #838383;padding: 3rem 0 1.5rem 0;}
+
+/*jiaoyidaiban*/
+.serviceItem{margin: 1rem 1.5rem 0;text-align: center;}
+.gywmMa{max-width: 34.5rem;margin:2rem auto 0;}
+.gywmMa img{max-width: 34.5;display:block;}
+.ServiceBound{margin: 3.4rem 1.5rem 0;font-size: 1.6rem;color: #333;}
+.gywmMa .tag{font-size: 1.4rem;color: #333;}
+.gywmMa .tag span{margin: 0 1rem 0 0;}
+
+
+/*xiaoqusousuojieguoye*/
+.list .scBannerBox{height: 12.5rem;overflow: hidden;position: relative;}
+.list .scBannerBox .detail{position: absolute;z-index: 333;bottom: 1rem;left: 1rem;}
+.list .scBannerBox .detail .tagName{padding: 0;}
+.list .scBannerBox img{width: 100%;height: 12.5rem;display: block;}
+.list .VillageNameBox p{font-size: 1.6rem;color: #000;margin: 1rem 0 0 0;}
+.list .VillageName{float: left;padding: 0 2rem 0 0 !important;}
+.list .priceBox{float: right;color: #ff6464 !important;}
+.list .VillageNameBox{overflow: hidden;background: #fff;}
+.list .AddressBox{margin: 1rem 0 0 0;}
+.list .AddressBox p{float: left;font-size:1.4rem;color: #838383;}
+.list .lfadr{margin: 0 1.8rem 0 0;}
+
+/*changjianwenti*/
+.question{margin: 0;background: #fff}
+.question p{font-size: 1.6rem;margin:1rem 0 3rem 0}
+.question p:last-child{margin:1rem 0 1rem 0 }
+.question p.name{margin: 0 0 0.2rem 0;}
+.question .title{font-size: 1.4rem}
+.question .red{color: #ff7c77;}
+.question .blue{color: #2463b9;}
+
+/*sousuolist*/
+.selectBox{overflow: hidden;margin:0 0 0 4%;position: absolute;top: 4.5rem;z-index: 9999;}
+.selectBox .selectedTitle{font-size: 1.4rem;padding: .8rem 0;color: #8E8E93;}
+.selectBox .selectedTitle .downIcon{width:1rem;height: 0.7rem;background: url(http://static1.sqtoon.com/ftoonApp/images/downIcon.png) no-repeat;background-size: 1rem auto;display: inline-block;margin: 0 0.2rem 0 0;}
+.selectBox .blackBg{background: url(http://static1.sqtoon.com/ftoonApp/images/Box.png) no-repeat;background-size: 11.5rem auto;width: 11.5rem;overflow: hidden;}
+.selectBox .selectList{border-radius:5px; margin:1.2rem 0 0 0;padding:0 1rem 0 1rem;background:#5e5e5e}
+.selectBox .selectList li{padding: 1.26rem 0;border-bottom: 0.1rem solid #929292;text-indent: 4rem;}
+.selectBox .selectList li a{font-size: 1.4rem; color:#fff;}
+.selectBox .selectList li{background-size: 1.9rem auto !important;}
+.selectBox .selectList .secondHandHousing{background: url(http://static1.sqtoon.com/ftoonApp/images/ershoufang.png)1rem center no-repeat;}
+.selectBox .selectList .renting{background: url(http://static1.sqtoon.com/ftoonApp/images/zufang.png)1rem center no-repeat;}
+.selectBox .selectList .newHouse{background: url(http://static1.sqtoon.com/ftoonApp/images/xinfang.png)1rem center no-repeat;}
+.noBgBox{position: relative;}
+.noBgBox input{background: #fff;}
+.noBgBox input[type=text]:focus{background:#fff !important;text-indent: 6.5rem;}
+
+/*xiaoqu*/
+.xiaoqu{border: none;border-top: solid 1px #DBDBDB;padding:1rem 1.5rem;}
+.xiaoqu li{border-bottom:none;line-height:2.2rem;height:2.2rem;margin:0}
+.xiaoqu li span:first-child{width:7rem;display:inline-block;}
+.map .xqmap{width: 100%;height:15.5rem }
+
+/*huxingliebiao*/
+.houseType .houseTypeCont{border: solid #DBDBDB;border-width:0.1rem 0 0;background: #fff;padding: 1rem 0 1rem 1.5rem;overflow: hidden;}
+.houseType div[class=houseTypeCont]:last-child{border: solid #DBDBDB;border-width:0.1rem 0 0.1rem;}
+.houseTypeCont .htBox{float: left;}
+.houseType .houseTypeCont img{width: 9.5rem;height: 9.5rem;border: 0.1rem solid #DBDBDB;}
+.houseType .houseTypeCont .HouseProfile{font-size: 1.6rem;color: #000;margin: 0 0rem 0 1.5rem;}
+.houseType .houseTypeCont i{display: block;float: right;margin: 3.5rem 1rem 0 0;}
+
+/*blackShade*/
+.selectBox1{position: absolute;top: 2.5rem;right:1.5rem;z-index: 9999;}
+.selectBox1 .blackBg{background: url(http://static1.sqtoon.com/ftoonApp/images/Boxsmall.png) no-repeat;background-size: 7.5rem auto;width: 7.5rem;height:18.6rem;overflow: hidden;}
+.selectBox1 .selectList{margin:1rem 1rem 0 1rem;}
+.selectBox1 .selectList li{padding:1.25rem 0;text-indent: 0rem;text-align: center;}
+.selectBox .selectList li:last-child{border: none;}
+
+/*huxingtu*/
+.conMs{width:100%;}
+.conMs li{width: 32.66%;margin: 0  1% 1% 0;float: left;}
+.conMs li:last-child{margin-right: 0;}
+.conMs li a{display: block;}
+.conMs li a img{width: 100%;height: 9.05rem;margin: 0 0.45rem 0 0;}
+.conMs .centerImg{margin: 2rem auto 0;display: block;}
+
+/*zixunliebiao*/
+.zixun .list img.left{height:9rem;}
+.zixun .list .detail{height: 9rem;overflow: hidden;}
+.zixunCon{margin:0 1.5rem;}
+.zixunCon .title{font-size: 1.6rem;color: #333333;margin-top: 1.5rem;}
+.zixunCon .tag{color: #838383;margin:1rem 0 1.5rem 0}
+.zixunCon .tag span{margin-right:1rem}
+.zixunCon .detail{color: #333333;font-size:1.6rem;border-top: dashed 1px #dbdbdb;padding:0.7rem 0}
+.zixunCon .detail p{text-indent:3rem;margin-top:0.8rem;}
+
+.shaixvan .bigmap img{width: 100%;height: 51.5rem;}
+.selectlist{border-bottom:solid 1px #dbdbdb;zoom:1;overflow: hidden;}
+.selectlist input[type=radio]{margin:5rem 1rem 0 0;float: left;}
+.selectlist input[type=checkbox]{margin:5rem 1rem 0 0;float: left;}
+.selectlist .list{border-bottom: none;}
+.selectlist .left{width:16.3rem;float: left;}
+.selectlist .list .detail{margin-left: 17rem}
+
+/*fangyuanxiangqing*/
+.listNoMar{padding: 1.5rem 1.5rem 0;background: #fff;}
+.description{display: box;display: -webkit-box;overflow: hidden;padding: 0 0 1.5rem 0;border-bottom: .1rem solid #DBDBDB;}
+.description .describeCon{-webkit-box-flex: 1;box-flex: 1;}
+.description .describeCon li{font-size:1.6rem;color: #333;line-height: 182%;}
+.pinkFont{color: #ff6464;}
+.descriptionDifferent{border: none;padding: 1rem 0 1.5rem 0;}
+.fyTitle{padding-top: 2rem;}
+.listNoMar{font-size: 1.6rem;}
+.listNoMar div{margin: 0 0 0.5rem 0;}
+.packup{text-align: center;color: #007AFF;padding: 1rem 0 3rem 0;}
+.DownTriangle{width:1rem;height: 0.7rem;background: url(http://static1.sqtoon.com/ftoonApp/images/down.png)  no-repeat;background-size: 1rem auto;display: inline-block;}
+.upTriangle{width:1rem;height: 0.7rem;background: url(http://static1.sqtoon.com/ftoonApp/images/uptran.png)  no-repeat;background-size: 1rem auto;display: inline-block;}
+.brokerList{margin: 0 0 1rem 0;}
+.brokerList li{padding: 0 !important;margin: 0 !important;border-bottom: .1rem solid #DBDBDB;border-radius: 0 ;}
+.itMor{margin: 0 0 .6rem 0;}
+.itMor1{text-indent: 1rem;}
+.areaP{background: url(http://static1.sqtoon.com/ftoonApp/images/arrowright.png)center right  no-repeat;background-size:0.95rem auto;margin: 1.5rem 1rem 0 0;}
+.areaP span{display: block;}
+.noHei li{height: auto;overflow: hidden;}
+.houseTypeCont1{border: solid #DBDBDB;border-width:0.1rem 0 0.1rem;background: #fff;padding: 1rem 0 1rem 1.5rem;overflow: hidden;}
+.houseTypeCont1 .HouseProfile{font-size: 1.6rem;}
+.mapBoxDown{height: 15.7rem;overflow: hidden;}
+.addInp textarea{width: 96%;border: none;height: 7.5rem;margin: 0 2%;resize: none;}
+.hsMar{margin: 3rem 0 0 0;border: solid #DBDBDB;border-width: 0.1rem 0;}
+.fielD{border-bottom: none !important;}
+.fielD li:last-child .borderLine{border: none !important;}
+.fielD li input{position: inherit;text-align: left;}
+.sendAuthCode{border: .1rem solid #2463b9;height: 2.8rem;line-height:2.8rem;color: #007AFF !important;padding: 0.5rem 0 .6rem;border-radius: .3rem;}
+.topNoBor{border-top: none;}
+.cyList span{float: right;margin: 0 1.5rem 0 0;color: #838383;}
+.cyList .xqfirst{float: none;color: #333;}
+.cyList .blue{color: #007AFF;}
+.topNoBor li input{padding: 0;}
+.topNoBor li{border-top: none;}
+.cyList li .radioBox{padding: 0 0 0 1rem;display: inline-block;}
+.cyList li .radioBox input[type=radio],.xcmcTitle input[type=radio]{position: inherit;width: 1.5rem;height: 1.5rem;-webkit-appearance: none;background: url(http://static1.sqtoon.com/ftoonApp/images/bluecircle.png) no-repeat;vertical-align: middle;background-size: 1.5rem auto;}
+.cyList li .radioBox input[type=checkbox],.xcmcTitle input[type=checkbox]{position: inherit;width: 1.5rem;height: 1.5rem;-webkit-appearance: none;background: url(http://static1.sqtoon.com/ftoonApp/images/bluecircle.png) no-repeat;vertical-align: middle;background-size: 1.5rem auto;}
+.cyList li .radioBox label{float: inherit;color: #838383;}
+.cyList li .radioBox input[type=radio]:checked,.xcmcTitle input[type=radio]:checked{background: url(http://static1.sqtoon.com/ftoonApp/images/bluecircle1.png) no-repeat;background-size: 1.5rem auto;}
+.cyList li .radioBox input[type=checkbox]:checked,.xcmcTitle input[type=checkbox]:checked{background: url(http://static1.sqtoon.com/ftoonApp/images/bluecircle1.png) no-repeat;background-size: 1.5rem auto;}
+.rightRadio{position: absolute;right:1.5rem;top: 0;}
+/*.conM li{background: url(http://static1.sqtoon.com/ftoonApp/images/blueDot.png) 0 center no-repeat;background-size: 0.8rem auto;text-indent: 1.5rem;}*/
+
+/*wodefangyuanliebiao*/
+.myfyCon .list{margin-top:3rem;background: #fff;border-top: solid 1px #dbdbdb;}
+.myfyCon .list .top{margin:0 0 1.5rem 1.5rem;border-bottom: solid 1px #dbdbdb;padding-bottom: 1.5rem}
+.myfyCon .list .top.noBot{border-bottom:none;margin:0 0 0 1.5rem; padding-bottom: 0}
+.myfyCon .list .top span{font-size: 1.6rem;color: #333333}
+.myfyCon .list .top span.right{float: right;margin-right: 1.5rem;}
+.list{position: relative !important;}
+.myfyCon .list .detail{overflow: hidden;zoom:1; margin:0 1.5rem;background:url(http://static1.sqtoon.com/ftoonApp/images/arrowright.png) right center no-repeat;background-size: 1rem auto}
+.myfyCon .list .detail.noarr{background: #ffffff;margin-top: 1rem;}
+.myfyCon .list .detail .name{color: #000000;font-size: 1.6rem;}
+.myfyCon .list .detail .name,.list .detail .title{height: 2.2rem;overflow: hidden;text-overflow:ellipsis;white-space:nowrap;}
+.myfyCon .list .detail .tags{margin: .3rem 0}
+.myfyCon .list .detail .tags span{font-size:1.6rem;margin-right: 0.5rem;color:#838383}
+.myfyCon .list .detail .tags span.thin{font-weight: 100;color: #ff6464;}
+.myfyCon .list .detail .tags .red{color: #ff6464;font-weight: bold;font-size:1.6rem;}
+.myfyCon .list .btnCon,.detayes .btnCon{overflow: hidden;zoom:1;padding:.7rem 0;}
+.myfyCon .list .btnCon a,.detayes .btnCon a{border-radius:1.2rem; font-size: 1.3rem;color: #fff;padding:.5rem 1.5rem;background: #91b1dc url(http://static1.sqtoon.com/ftoonApp/images/cir_wri.png) .8rem center no-repeat;background-size: .4rem auto;}
+.list img.leftimgsmall{height:9rem;width: 13rem}
+.three .tag{width: 32% !important;}
+.list.nobot{border-bottom: none;}
+.list.nomarpar{padding: 1rem 0;margin: 0;border-top: none;}
+.myhdeatilCon{margin-top: 1rem; padding: 0 1.5rem;background: #ffffff; border-top: solid 1px #dbdbdb;border-bottom: solid 1px #dbdbdb;}
+.detayes .bortopbot{padding:1rem 1.5rem 1rem 0;border-bottom: solid 1px #dbdbdb;overflow: hidden;zoom:1;}
+.detayes .bortopbot.nobot{border-bottom: none;}
+.detayes .detaye span{font-size: 1.6rem;color: #000000;line-height:2.4rem;}
+.detayes .detaye .eye{font-size: 1.4rem;float: right;text-align: right; color: #838383;padding-right:2rem;background:url(http://static1.sqtoon.com/ftoonApp/images/eye.png) right no-repeat;background-size:1.5rem auto;}
+.detayes img.left{margin-right:.8rem; width: 4.4rem;height: 4.4rem;border-radius:50%;float: left;}
+.detayes .right span{line-height: 2.4rem}
+
+.firmar li:first-child{margin:0;}
+.gwtitle{margin:3rem 0 1rem 1.5rem;font-size: 1.4rem;color: #838383}
+
+/*gerenzhongxin*/
+.grTopCard{height: 37.5rem;position:relative;overflow: hidden;}
+.content .grCard{height: 37.5rem;}
+.content .grCard img{height: 37.5rem;}
+.content .grCardShade{width: 100%;height: 8.5rem;background:rgba(0,0,0,0.5);position: absolute;bottom: 0;left: 0;z-index: 8;}
+.content .grNickNameBox{width:100%;position: absolute;bottom: 0;left: 0;z-index: 10;}
+.content .grNickNameBox p{text-align: center;color: #fff;font-size: 1.6rem;}
+.content .grNickNameBox .grNickName{margin: 0 0 1rem 0;}
+.content .grNickNameBox .grNickName1{margin: 0 0 3.2rem 0;font-size: 1.4rem;}
+.content .EightGongGe{background:#fff;width: 100%;height: 11rem;/*display: box;display: -webkit-box;*/overflow: hidden;/*border: solid #DBDBDB;border-width:0.1rem 0.1rem 0 0;*/}
+.content .EightGongGe li{border: solid #DBDBDB;border-width: 0 0.1rem 0.1rem 0rem;height: 11rem;/*-webkit-box-flex: 1;box-flex: 1;*/width: 25%;float: left;}
+.content .EightGongGe li dl{text-align: center;margin: auto 0;}
+.content .EightGongGe li dl dt img{height: 3.2rem;margin: 2.6rem 0 0 0;}
+.content .EightGongGe li dl dd{font-size: 1.6rem;color: #333;margin: 1.8rem 0 0 0;}
+.content .EightGongGeNone .touming{visibility: hidden;}
+
+
+/*gerenzhongxin*/
+.content .GRZXcarList{margin: 0;}
+.content .GRZXcarList li{border-radius: 0;border: solid #DBDBDB;border-width: 0 0 0.1rem;margin: 0;}
+.content .GRZXcarList .WtBs1{font-size: 1.4rem;}
+.content .GRZXcarList .WtBs1 span{color: #FF6464;}
+.cgbold{font-weight: bold;}
+
+.jsqCon{background: #fff;overflow: hidden;}
+.jsqCon .left{float: left;margin:1rem 0 1rem 1.5rem;}
+.jsqCon .right{float: right;margin:1rem  1.5rem 1rem 0;}
+.jsqCon .calculator{display: block;width:5rem;height:5rem;background: url(http://static1.sqtoon.com/ftoonApp/images/calculator.png) no-repeat;background-size:5rem auto;}
+.junjCon span{margin-right: .5rem;font-size: 1.4rem;color:#333333}
+.junjCon .red{color: #ff6464;font-size: 1.6rem;font-weight: bold;}
+.junjCon .thin{font-weight:100;color: #ff6464;}
+.favourable{padding:1.5rem;width: 100%;overflow:hidden;zoom:1;border-bottom: solid 1px #dbdbdb;}
+.favourable div{color: #fff;padding:1rem 1rem;text-align:center;font-size: 1.4rem;}
+.favourable .red{background: #ff6464;width:35%;float: left;border-radius:5px 0 0 5px}
+.favourable .blue{background: #286ecb;margin-left: 1rem;border-radius:0 5px 5px  0}
+.xqsecon{color: #333 !important;float: none !important;}
+.nomarhasbo{border-bottom:solid 1px #dbdbdb;}
+.field .lpbotNoBor{border: none !important;border-top:solid 1px #dbdbdb !important;}
+.lparr{background: #fff;padding:0 0 0 1.5rem;}
+.lparr.hasbor{border:solid 1px #dbdbdb;}
+.lparr label span{font-size: 1.6rem;margin-left:1.5rem;}
+.lparr a,.lparr label{font-size: 1.6rem;line-height:4rem;}
+.lparr .bottombor{border-bottom: solid 1px #dbdbdb;}
+.xqpicbenne{margin-bottom:3rem; background: url(http://static1.sqtoon.com/ftoonApp/images/xqpicbenne.png) no-repeat;width: 100%;height: 11rem;}
+
+.ldhMar{margin: 3rem 0 0 0;}
+/*shangjiashibai*/
+.fabucon .bigcircle.erroy{width:10rem;height:10rem;background: url(http://static1.sqtoon.com/ftoonApp/images/error.png) no-repeat;background-size: 10rem auto;}
+.xqcenter{text-align: center;}
+
+/*fangyuanshangjiatongzhi*/
+.fysjtitle{font-size: 1.4rem;color: #8e8e93;margin: 1rem 1.5rem 0;}
+.grzxSettingsMar{margin: 3rem 0 0;}
+
+
+.content.lpy{margin:0 0 5rem 0}
+.scCardList li:first-child{margin-top: 0;}
+.list .detail .tag.rightbo{text-align: right;margin:.5rem 0 0 0 }
+.map.marBot{margin-bottom:3rem;}
+.lparr.lasthasm{border-bottom: solid 1px #dbdbdb;margin-bottom:3rem;}
+.bortobo .list{border-bottom: none;}
+.bortobo{border-bottom: solid 1px #dbdbdb;border-top: solid 1px #dbdbdb;}
+.lpy .lpytitle{text-align: center;font-size: 1.6rem;padding:1.4rem 0;background: #fff;}
+.lpy .lpytitle.hasparbor{padding:1.4rem 1.5rem !important;border-bottom: solid 1px #dbdbdb;border-top: solid 1px #dbdbdb;}
+.lpy .lpytitle.tlet{text-align: left;padding: 1.4rem 0 .6rem 0}
+.lpy .lpytitle.tlet .allhd{float: right;color: #007AFF;}
+.cyList.noparmar{padding: 0;margin: 0;}
+.detailDis{padding:0 1.5rem;}
+.detailDis .flleft{float: left;width: 50%;padding:1.5rem 0 0 0;}
+.detailDis .flright{float: right;width: 50%;padding:1.5rem 0 0 0;}
+.detailDis .cyList label{padding: 0 !important}
+.detailDis .cyList .xqfirst{margin-right: 1rem;}
+.jsqCon .right.smallmar{margin:0 1.5rem 1rem 0}
+.jsqCon .left.more{margin:1.5rem 0 1rem 1.5rem}
+.lpy.cyList li{/*text-indent:2rem; */height: auto;line-height:2.6rem;border-bottom: none;background: url(http://static1.sqtoon.com/ftoonApp/images/blueDot.png) 0 1.2rem no-repeat;background-size:0.8rem auto;}
+.tabBox.widregular li{width:8rem;-webkit-box-flex:0;}
+.topTab.hasmarg{padding-left:1.5rem;}
+.tabBox.hasbord{background: #fff;border-bottom: solid 1px #dbdbdb;height: 4rem}
+.tabBox.hasbord li{line-height:4rem;}
+.lpyms{padding: 1.5rem 1.5rem 1.5rem 0;border-bottom: solid 1px #dbdbdb;border-top: none;}
+.lpyms li label{padding:0 0 0 1.5rem;}
+.lpymstitCon{padding-left: 1.5rem;background: #ffffff;}
+.lpymstitCon.hasbor{border-bottom: solid 1px #dbdbdb;}
+.lpymstitCon.hasbor .lpymstit{border-bottom: none;}
+.lpymstit{border-bottom: solid 1px #dbdbdb; color: #333333;font-size: 1.6rem;line-height: 4rem;}
+.lpymstit .arrtop,.lpymstit .arrbot{width:3rem;float:right;height:4rem;display:inline-block;background: url(http://static1.sqtoon.com/ftoonApp/images/arrowtop.png) left no-repeat;background-size:1.5rem auto;}
+.lpymstit .arrbot{background: url(http://static1.sqtoon.com/ftoonApp/images/arrowBot.png) left no-repeat;background-size:1.5rem auto;}
+.content.mar{padding:4rem 1.5rem 0 1.5rem;}
+.lpytag{font-size:1.4rem;color:#838383;}
+.lpytag span{margin: 0 .5rem;font-size: 1.4rem;}
+.lpxxdt{width: 100%;height: 12.5rem;margin: 1rem 0;}
+.lpydatail{line-height: 2.6rem;font-size: 1.6rem;color: #333333;text-indent:2.7rem;}
+.list .scBannerBox .detail.left{margin-left:0;}
+.priceBox.right{float: right !important;}
+.collectsum{color:#838383 !important; float: right;padding: 0 1.8rem 0 0;background: url(http://static1.sqtoon.com/ftoonApp/images/star.png) right center no-repeat;background-size:1.5rem;}
+.list .AddressBox.smmargin{margin:.2rem 0 0 0}
+.redzk{position: absolute;z-index:333;top: 0;right: 0;background:#ff6464;color: #fff;padding:.9rem 2rem;border-radius:2rem 0 0 2rem;font-size: 1.3rem;}
+.condition .firstList,.condition .scendList,.condition .thirdList{border-left: solid 1px #dbdbdb; float:left;width:30%}
+.condition .firstList{width: 20%}
+.condition .thirdList{float:left;width:50%}
+.activityCon{padding:1rem 1.5rem;}
+.activityCon p{font-size: 1.6rem;line-height: 2.4rem;color: #333333}
+.activityCon p .red{color: #ff7c77}
+.activityCon p.wenan{margin: 2rem 0}
+.activityCon .bluebtn{background: #2463b9;color: #fff;font-size: 1.6rem;display:block;padding:1rem;border-radius: 5px;text-align: center;}
+.ldhMar{margin: 3rem 0 0 0;}
+
+/*wodefangyuan*/
+.WDFYbannerNobor{border-top: none !important;}
+.WDFYbannerNobor div.tag{width: 49% !important;}
+.WDFYparpo{position: relative;}
+.WDFYparpoB{position: absolute;z-index: 11;}
+
+
+/*woguanzhudexiaoqufangyuan*/
+.rightDpict{margin: 1rem 0rem 0 0 !important;font-size: 1.4rem !important;color: #838383 !important;}
+.AddressBox .priceBox{float: right !important;color: #838383 !important;}
+/*.VillageName{margin: 1rem 1.5rem 0 0 !important;}*/
+.content .xqsurvey{overflow: hidden;}
+.content .xqsurvey dt{float: left;}
+.content .xqsurvey dd{float:right;vertical-align: center;}
+.content .xqsurvey dd p,.attention p{padding: 0.3rem 0.6rem; border: 0.1rem solid #2463b9;font-size: 1.4rem;color: #007AFF;border-radius: 0.3rem;margin: 2rem 0rem 0 0;}
+.content .detailNomar{margin: 0 !important;}
+.roughRed{color:#ff6464 !important;}
+
+.field li.tach,.field li.tach input{background:#f3f4f5;}
+.attention{float: right;}
+.attention p{margin: 0;}
+.leftBox{float: left;}
+.nopad{padding: 1rem 0 0 0 !important;}
+
+.ActiveTouch{background: #F3F4F5 !important;}
+.cyList li .cyListA{float: right;}
+.cyList li .cyListA font{padding: 0 .5rem 0 0;color: #838383 !important;}
+.shortInput{width: 10rem;}
+.detailNpad{margin: 0 !important;}
+.nolawi.field li label{width: auto !important;padding:0;}
+.nolawi.field .radioBox label{padding: 0 0 0 1rem;}
+.cyList.haspadle{padding:0.5rem 1.5rem;}
+.leftYcs{position: absolute;bottom: 0.5rem;left: 40%;font-size: 1.6rem;color: #fff;}
+.syCont{background: #fff;margin-bottom: 0;}
+
+
+
+/*.toolBar .iconSize{background-size: 1.8rem auto !important;}*/
+.toolBar .Bus{background: url(http://static1.sqtoon.com/ftoonApp/images/bus.png) center .625rem no-repeat;background-size: 1.8rem auto;}
+.toolBar .BusActive{background: url(http://static1.sqtoon.com/ftoonApp/images/busActive.png) center .625rem no-repeat;background-size: 1.8rem auto;}
+
+.toolBar .metro{background: url(http://static1.sqtoon.com/ftoonApp/images/metro.png) center .625rem no-repeat;background-size: 1.6rem auto;}
+.toolBar .metroActive{background: url(http://static1.sqtoon.com/ftoonApp/images/metroActive.png) center .625rem no-repeat;background-size: 1.6rem auto;}
+
+.toolBar .bank{background: url(http://static1.sqtoon.com/ftoonApp/images/bank.png) center .325rem no-repeat;background-size: 1.4rem auto;}
+.toolBar .bankActive{background: url(http://static1.sqtoon.com/ftoonApp/images/bankActive.png) center .325rem no-repeat;background-size: 1.4rem auto;}
+
+.toolBar .ATM{background: url(http://static1.sqtoon.com/ftoonApp/images/ATM.png) center .625rem no-repeat;background-size: 2.2rem auto;}
+.toolBar .ATMActive{background: url(http://static1.sqtoon.com/ftoonApp/images/ATMActive.png) center .625rem no-repeat;background-size: 2.2rem auto;}
+
+.toolBar .infirmary{background: url(http://static1.sqtoon.com/ftoonApp/images/infirmary.png) center .625rem no-repeat;background-size: 1.8rem auto;}
+.toolBar .infirmaryActive{background: url(http://static1.sqtoon.com/ftoonApp/images/infirmaryActive.png) center .625rem no-repeat;background-size: 1.8rem auto;}
+
+
+
+
+.toolBar1 .relation{background: url(http://static1.sqtoon.com/ftoonApp/images/relation.png) center .625rem no-repeat;background-size: 2rem auto;}
+.toolBar1 .relationActive{background: url(http://static1.sqtoon.com/ftoonApp/images/relationActive.png) center .625rem no-repeat;background-size: 2rem auto;}
+
+.toolBar1 .collect{background: url(http://static1.sqtoon.com/ftoonApp/images/collect.png) center .625rem no-repeat;background-size: 2rem auto;}
+.toolBar1 .collectActive{background: url(http://static1.sqtoon.com/ftoonApp/images/collectActive.png) center .625rem no-repeat;background-size: 2rem auto;}
+
+.toolBar1 .contrast{background: url(http://static1.sqtoon.com/ftoonApp/images/contrast.png) center .625rem no-repeat;background-size: 2rem auto;}
+.toolBar1 .contrastActive{background: url(http://static1.sqtoon.com/ftoonApp/images/contrastActive.png) center .625rem no-repeat;background-size: 2rem auto;}
+
+.toolBar1 .loupanLoca{background: url(http://static1.sqtoon.com/ftoonApp/images/loupanLoac.png) center .625rem no-repeat;background-size: 1.8rem auto;}
+.toolBar1 .loupanLocaActive{background: url(http://static1.sqtoon.com/ftoonApp/images/loupanLoacActive.png) center .625rem no-repeat;background-size: 1.8rem auto;}
+
+
+.cityS{background: url(http://static1.sqtoon.com/ftoonApp/images/qiehuanchengshi.png)2rem center no-repeat;background-size: 2rem auto;}
+.updateS{background: url(http://static1.sqtoon.com/ftoonApp/images/jianchagengxin.png)2rem center no-repeat;background-size: 2rem auto;}
+
+
+.clearS{background: url(http://static1.sqtoon.com/ftoonApp/images/qingchuhuancun.png)2rem center no-repeat;background-size: 2rem auto;}
+.helpS{background: url(http://static1.sqtoon.com/ftoonApp/images/shiyongbangzhu.png)2rem center no-repeat;background-size: 2rem auto;}
+.guanyuUs{background: url(http://static1.sqtoon.com/ftoonApp/images/guanyuwomen.png)2rem center no-repeat;background-size: 2rem auto;}
+.mianzeshengm{background: url(http://static1.sqtoon.com/ftoonApp/images/mianzeshengming.png)2rem center no-repeat;background-size: 2rem auto;}
+
+
+.bottomTab{width:100%;position: fixed;bottom: 0;left: 0;z-index: 1955;background: #353535;}
+.bottomTab li{border-right: .1rem solid #fff;}
+.bottomTab li:last-child{border-right: none;}
+.bottomTab li a{color: #fff;}
+.bottomTab .active{color: #007aff;}
+
+.lpymstit{padding-left:2.2rem;background:url(http://static1.sqtoon.com/ftoonApp/images/lpyblueci.png) left no-repeat; background-size:1.5rem; border-bottom: solid 1px #dbdbdb; color: #333333;font-size: 1.6rem;line-height: 4rem;}
+.lpyms .msfirst{color:#929292}
+.hasBg{background: url(http://static1.sqtoon.com/ftoonApp/images/redDot.png)right 2rem center no-repeat;background-size: .8rem auto;}
+
+.leftFl{float: left;width: 70% !important;text-indent: 5.5rem;}
+
+.lenameBox .hasBg{background: url(http://static1.sqtoon.com/ftoonApp/images/redDot.png)left center no-repeat;background-size: .6rem auto;padding: 0 0 0 1.2rem;}
+.VillageName2{margin: 1.3rem 0 0 1.5rem ;}
+.popHead{display: -webkit-box;-webkit-box-sizing: border-box;-webkit-box-pack: justify; z-index: 22;background:rgba(0,0,0,0.5);margin:0;width:100%;padding:1rem 3%;overflow: hidden;position: fixed;top: 0;}
+.popHead a{display:-webkit-box;color: #fff;line-height:3rem;font-size: 2rem;}
+.popHead .poprightSel span{width:3rem;height:3rem;display: block;background:url(http://static1.sqtoon.com/ftoonApp/images/checkBoxbw.png);background-size:3rem auto;}
+.datuselCon{text-align:center;}
+.datuselImg{max-width:100%;}
+.popfooter{display: -webkit-box;-webkit-box-sizing: border-box;-webkit-box-pack: justify;z-index: 22;background: rgba(0,0,0,0.5);margin: 0;width: 100%;padding:0 3%;overflow: hidden;position: fixed;bottom: 0;}
+.popfooter a{display: -webkit-box;color: #fff;line-height: 4rem;font-size:1.7rem;}
+.popfooter .blue span{background:#007aff;padding:.2rem .7rem;color: #fff;border-radius: 50%;margin-right:.5rem;}
+.popfooter .blue{color:#007aff;}
+.clickLoad{display: block;text-align: center;padding: 20px 0;font-size: 1.6rem;}
+.xxCon{margin: 1rem 1.5rem;font-size: 1.6rem;}
+.xxCon p{margin: 0 0 0.5rem 0;}
+.h1Title{margin: 2rem 0 0 0;font-size: 1.6rem;font-weight: bold;}
+.texId{padding: 0 0 0.5rem 0;}
+
+.rightFlo{position: absolute;top: 120px;right: 0px;line-height: 3rem;padding: 0 0.5rem;border-radius: 0.4rem;bottom: 68px;}
+
+.enDActive{background: #DBDBDB;}
+.delectAttention{padding: 0.3rem 0.6rem;  border: 0.1rem solid #2463b9;  font-size: 1.4rem;  color: #007AFF;  border-radius: 0.3rem;  margin: 2rem 0rem 0 0;position: absolute;right: 0;bottom: 3.5rem;}

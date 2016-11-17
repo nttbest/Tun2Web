@@ -1,0 +1,7 @@
+<section class="live-body">
+    <div class="live-list" ng-repeat="data in dataList" ng-click="toServer(data)">
+        <div class="item-img"><img ng-src="{{data.icon}}"/></div>
+        <p class="item-title" ng-bind="data.title"></p>
+        <div  class="goto"><img src="assets/arrowright.png"/></div>
+    </div>
+</section>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>774B00B6-376A-4A89-957D-3F6681677722</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ToonBrowser</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>167f3fbf-af06-46a1-b896-7dc259511ab7++4925</key>
+		<string>http://172.28.2.60/svn/syswin-Pro/Pro-browser</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iOS/ToonBrowser/ToonBrowser.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>167f3fbf-af06-46a1-b896-7dc259511ab7++4925</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>167f3fbf-af06-46a1-b896-7dc259511ab7++4925</key>
+		<string>http://172.28.2.60/svn/syswin-Pro</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>http://172.28.2.60/svn/syswin-Pro/Pro-browser/iOS/ToonBrowser/ToonBrowser.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>167f3fbf-af06-46a1-b896-7dc259511ab7++4925</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>167f3fbf-af06-46a1-b896-7dc259511ab7++4925</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Pro-browser</string>
+		</dict>
+	</array>
+</dict>
+</plist>

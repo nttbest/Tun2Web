@@ -1,0 +1,24 @@
+<div class="wrap">
+    <div id="editCon" rcustom-direct-edit>
+        <rcustom-direct-input ng-show="data.currentSub==='input'"></rcustom-direct-input>
+        <rcustom-direct-radiosingle ng-show="data.currentSub==='radio_single'"></rcustom-direct-radiosingle>
+        <rcustom-direct-radiomultiple ng-show="data.currentSub==='radio_multiple'"></rcustom-direct-radiomultiple>
+    </div>
+    <div class="bottom">
+        <div class="pagelist">
+            <p class="listtit">字段类型</p>
+            <div class="pagelistCon" rcustom-direct-all>
+                <div class="pageLi" ng-repeat="buttonName in buttonSelects track by $index" rcustom-direct>
+                    <div class="pageFont" ng-init="buttonStatus.select=(buttonName==='文字输入')" ng-class="{selected:buttonStatus.select}">
+                        <span>{{buttonName}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pagelist">
+            <div class="pagelistCon center" ng-click="removeSub($event,$index)">
+                <a href="" class="deleteBtn">删除</a>
+            </div>
+        </div>
+    </div>
+</div>

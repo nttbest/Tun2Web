@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <title>爱车服务</title>
+    <link rel="stylesheet" type="text/css" href="../css/index.css"/>
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/jquery.mobile-events-min.js"></script>
+    <style>
+
+        .position-city-title{height: 30px;line-height: 30px;background: #EFEEEC;position: fixed;top:40px;width: 100%;}
+        .position-city-title p{font-size: 12px;color:#95958E;font-weight: 100;padding-left: 10px;}
+        .position-city{height: 40px;line-height: 40px;background: #fff;position: fixed;top:70px;width: 100%;}
+        .position-city p{padding-left: 10px;}
+        .slider{width: 100%;margin-top: 110px;}
+        .slider .slider-content{width: 100%;display: flex;display: -webkit-flex;}
+        .slider .slider-content .slider-content-list{width: 100%;}
+        .slider .slider-content .title{display:inline-block;background:#F7F7F7;height: 20px;width: 100%;padding-left: 10px;font-weight: bold; }
+        .slider-content-item{width: 94%;margin: 0 3%;}
+        .slider-content-item li{height: 36px;line-height: 36px;width: 100%;border-bottom: 1px solid #F4F4F4;}
+        .slider-content-item li a{color: #000;}
+
+        .slider-nav{position: fixed;top:110px;right:15px;height: 60%;}
+        .slider-nav ul{padding: 0;margin: 0;height: 100%;}
+        .slider-nav ul li{padding: 0;margin: 0;display:block;height: 3.7%;}
+        .slider-nav ul li a{font-size: 12px;font-weight: bold;color:#3573B9;}
+    </style>
+</head>
+<body>
+<haeder class="header">
+    <a href="#" class="back"><img src="../assets/returnicon.png"/><span class="parent-title">爱车服务</span></a>
+    <span ng-bind="title" class="title">选择城市</span>
+    <span class="header-right">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+</haeder>
+<div class="position-city-title">
+    <p>当前定位城市</p>
+</div>
+<div class="position-city">
+    <p>北京</p>
+</div>
+<div id="slider" class="slider">
+    <div class="slider-content">
+        <ul class="slider-content-list">
+            <li id="A"><a name="a" class="title">A</a>
+                <ul class="slider-content-item">
+                    <li><a href="#">Adam</a></li>
+                    <li><a href="#">Alex</a></li>
+                    <li><a href="#">Ali</a></li>
+                    <li><a href="#">Apple</a></li>
+                    <li><a href="#">Arthur</a></li>
+                    <li><a href="#">Ashley</a></li>
+                </ul>
+            </li>
+            <li id="B"><a name="b" class="title">B</a>
+                <ul class="slider-content-item">
+                    <li><a href="/">Barry</a></li>
+                    <li><a href="/">Becky</a></li>
+                    <li><a href="/">Biff</a></li>
+                    <li><a href="/">Billy</a></li>
+                    <li><a href="/">Bozarking</a></li>
+                    <li><a href="/">Bryan</a></li>
+                </ul>
+            </li>
+            <li id="C"><a name="c" class="title">c</a>
+                <ul class="slider-content-item">
+                    <li><a href="/">Calista</a></li>
+                    <li><a href="/">Cathy</a></li>
+                    <li><a href="/">Chris</a></li>
+                    <li><a href="/">Cinderella</a></li>
+                    <li><a href="/">Corky</a></li>
+                    <li><a href="/">Cypher</a></li>
+                </ul>
+            </li>
+            <li id="D"><a name="d" class="title">d</a>
+                <ul class="slider-content-item">
+                    <li><a href="/">damien</a></li>
+                    <li><a href="/">danny</a></li>
+                    <li><a href="/">denver</a></li>
+                    <li><a href="/">devon</a></li>
+                    <li><a href="/">doug</a></li>
+                    <li><a href="/">dustin</a></li>
+                </ul>
+            </li>
+            <li id="E"><a name="e" class="title">E</a>
+                <ul class="slider-content-item">
+                    <li><a href="/">Barry</a></li>
+                    <li><a href="/">Becky</a></li>
+                    <li><a href="/">Biff</a></li>
+                    <li><a href="/">Billy</a></li>
+                    <li><a href="/">Bozarking</a></li>
+                    <li><a href="/">Bryan</a></li>
+                </ul>
+            </li>
+            <li id="F"><a name="f" class="title">f</a>
+                <ul class="slider-content-item">
+                    <li><a href="/">Calista</a></li>
+                    <li><a href="/">Cathy</a></li>
+                    <li><a href="/">Chris</a></li>
+                    <li><a href="/">Cinderella</a></li>
+                    <li><a href="/">Corky</a></li>
+                    <li><a href="/">Cypher</a></li>
+                </ul>
+            </li>
+            <li id="G"><a name="g" class="title">g</a>
+                <ul class="slider-content-item">
+                    <li><a href="/">damien</a></li>
+                    <li><a href="/">danny</a></li>
+                    <li><a href="/">denver</a></li>
+                    <li><a href="/">devon</a></li>
+                    <li><a href="/">doug</a></li>
+                    <li><a href="/">dustin</a></li>
+                </ul>
+            </li>
+            <li id="H"><a name="h" class="title">h</a>
+                <ul class="slider-content-item">
+                    <li><a href="/">Barry</a></li>
+                    <li><a href="/">Becky</a></li>
+                    <li><a href="/">Biff</a></li>
+                    <li><a href="/">Billy</a></li>
+                    <li><a href="/">Bozarking</a></li>
+                    <li><a href="/">Bryan</a></li>
+                </ul>
+            </li>
+            <li id="I"><a name="i" class="title">i</a>
+                <ul class="slider-content-item">
+                    <li><a href="/">Calista</a></li>
+                    <li><a href="/">Cathy</a></li>
+                    <li><a href="/">Chris</a></li>
+                    <li><a href="/">Cinderella</a></li>
+                    <li><a href="/">Corky</a></li>
+                    <li><a href="/">Cypher</a></li>
+                </ul>
+            </li>
+            <li id="J"><a name="j" class="title">j</a>
+                <ul class="slider-content-item">
+                    <li><a href="/">damien</a></li>
+                    <li><a href="/">danny</a></li>
+                    <li><a href="/">denver</a></li>
+                    <li><a href="/">devon</a></li>
+                    <li><a href="/">doug</a></li>
+                    <li><a href="/">dustin</a></li>
+                </ul>
+            </li>
+            <li id="K"><a name="k" class="title">k</a>
+                <ul class="slider-content-item">
+                    <li><a href="/">Barry</a></li>
+                    <li><a href="/">Becky</a></li>
+                    <li><a href="/">Biff</a></li>
+                    <li><a href="/">Billy</a></li>
+                    <li><a href="/">Bozarking</a></li>
+                    <li><a href="/">Bryan</a></li>
+                </ul>
+            </li>
+            <li id="L"><a name="l" class="title">l</a>
+                <ul class="slider-content-item">
+                    <li><a href="/">Calista</a></li>
+                    <li><a href="/">Cathy</a></li>
+                    <li><a href="/">Chris</a></li>
+                    <li><a href="/">Cinderella</a></li>
+                    <li><a href="/">Corky</a></li>
+                    <li><a href="/">Cypher</a></li>
+                </ul>
+            </li>
+            <li id="M"><a name="m" class="title">m</a>
+                <ul class="slider-content-item">
+                    <li><a href="/">damien</a></li>
+                    <li><a href="/">danny</a></li>
+                    <li><a href="/">denver</a></li>
+                    <li><a href="/">devon</a></li>
+                    <li><a href="/">doug</a></li>
+                    <li><a href="/">dustin</a></li>
+                </ul>
+            </li>
+            <li id="N"><a name="n" class="title">n</a>
+                <ul class="slider-content-item">
+                    <li><a href="/">damien</a></li>
+                    <li><a href="/">danny</a></li>
+                    <li><a href="/">denver</a></li>
+                    <li><a href="/">devon</a></li>
+                    <li><a href="/">doug</a></li>
+                    <li><a href="/">dustin</a></li>
+                </ul>
+            </li>
+            <li id="O"><a name="o" class="title">o</a>
+                <ul class="slider-content-item">
+                    <li><a href="/">damien</a></li>
+                    <li><a href="/">danny</a></li>
+                    <li><a href="/">denver</a></li>
+                    <li><a href="/">devon</a></li>
+                    <li><a href="/">doug</a></li>
+                    <li><a href="/">dustin</a></li>
+                </ul>
+            </li>
+            <li id="P"><a name="p" class="title">p</a>
+                <ul class="slider-content-item">
+                    <li><a href="/">Barry</a></li>
+                    <li><a href="/">Becky</a></li>
+                    <li><a href="/">Biff</a></li>
+                    <li><a href="/">Billy</a></li>
+                    <li><a href="/">Bozarking</a></li>
+                    <li><a href="/">Bryan</a></li>
+                </ul>
+            </li>
+            <li id="Q"><a name="q" class="title">q</a>
+                <ul class="slider-content-item">
+                    <li><a href="/">Calista</a></li>
+                    <li><a href="/">Cathy</a></li>
+                    <li><a href="/">Chris</a></li>
+                    <li><a href="/">Cinderella</a></li>
+                    <li><a href="/">Corky</a></li>
+                    <li><a href="/">Cypher</a></li>
+                </ul>
+            </li>
+            <li id="R"><a name="r" class="title">r</a>
+                <ul class="slider-content-item">
+                    <li><a href="/">damien</a></li>
+                    <li><a href="/">danny</a></li>
+                    <li><a href="/">denver</a></li>
+                    <li><a href="/">devon</a></li>
+                    <li><a href="/">doug</a></li>
+                    <li><a href="/">dustin</a></li>
+                </ul>
+            </li>
+            <li id="S"><a name="s" class="title">s</a>
+                <ul class="slider-content-item">
+                    <li><a href="/">Barry</a></li>
+                    <li><a href="/">Becky</a></li>
+                    <li><a href="/">Biff</a></li>
+                    <li><a href="/">Billy</a></li>
+                    <li><a href="/">Bozarking</a></li>
+                    <li><a href="/">Bryan</a></li>
+                </ul>
+            </li>
+            <li id="T"><a name="t" class="title">t</a>
+                <ul class="slider-content-item">
+                    <li><a href="/">Calista</a></li>
+                    <li><a href="/">Cathy</a></li>
+                    <li><a href="/">Chris</a></li>
+                    <li><a href="/">Cinderella</a></li>
+                    <li><a href="/">Corky</a></li>
+                    <li><a href="/">Cypher</a></li>
+                </ul>
+            </li>
+            <li id="U"><a name="u" class="title">u</a>
+                <ul class="slider-content-item">
+                    <li><a href="/">damien</a></li>
+                    <li><a href="/">danny</a></li>
+                    <li><a href="/">denver</a></li>
+                    <li><a href="/">devon</a></li>
+                    <li><a href="/">doug</a></li>
+                    <li><a href="/">dustin</a></li>
+                </ul>
+            </li>
+            <li id="V"><a name="v" class="title">v</a>
+                <ul class="slider-content-item">
+                    <li><a href="/">Barry</a></li>
+                    <li><a href="/">Becky</a></li>
+                    <li><a href="/">Biff</a></li>
+                    <li><a href="/">Billy</a></li>
+                    <li><a href="/">Bozarking</a></li>
+                    <li><a href="/">Bryan</a></li>
+                </ul>
+            </li>
+            <li id="W"><a name="w" class="title">w</a>
+                <ul class="slider-content-item">
+                    <li><a href="/">Calista</a></li>
+                    <li><a href="/">Cathy</a></li>
+                    <li><a href="/">Chris</a></li>
+                    <li><a href="/">Cinderella</a></li>
+                    <li><a href="/">Corky</a></li>
+                    <li><a href="/">Cypher</a></li>
+                </ul>
+            </li>
+            <li id="X"><a name="x" class="title">x</a>
+                <ul class="slider-content-item">
+                    <li><a href="/">damien</a></li>
+                    <li><a href="/">danny</a></li>
+                    <li><a href="/">denver</a></li>
+                    <li><a href="/">devon</a></li>
+                    <li><a href="/">doug</a></li>
+                    <li><a href="/">dustin</a></li>
+                </ul>
+            </li>
+            <li id="Y"><a name="y" class="title">y</a>
+                <ul class="slider-content-item">
+                    <li><a href="/">damien</a></li>
+                    <li><a href="/">danny</a></li>
+                    <li><a href="/">denver</a></li>
+                    <li><a href="/">devon</a></li>
+                    <li><a href="/">doug</a></li>
+                    <li><a href="/">dustin</a></li>
+                </ul>
+            </li>
+            <li id="Z"><a name="z" class="title">z</a>
+                <ul class="slider-content-item">
+                    <li><a href="/">damien</a></li>
+                    <li><a href="/">danny</a></li>
+                    <li><a href="/">denver</a></li>
+                    <li><a href="/">devon</a></li>
+                    <li><a href="/">doug</a></li>
+                    <li><a href="/">dustin</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="slider-nav">
+    <ul id="sliderNav">
+        <li><a href="#">A</a></li>
+        <li><a href="#">B</a></li>
+        <li><a href="#">C</a></li>
+        <li><a href="#">D</a></li>
+        <li><a href="#">E</a></li>
+        <li><a href="#">F</a></li>
+        <li><a href="#">G</a></li>
+        <li><a href="#">H</a></li>
+        <li><a href="#">I</a></li>
+        <li><a href="#">J</a></li>
+        <li><a href="#">K</a></li>
+        <li><a href="#">L</a></li>
+        <li><a href="#">N</a></li>
+        <li><a href="#">M</a></li>
+        <li><a href="#">O</a></li>
+        <li><a href="#">P</a></li>
+        <li><a href="#">Q</a></li>
+        <li><a href="#">R</a></li>
+        <li><a href="#">S</a></li>
+        <li><a href="#">T</a></li>
+        <li><a href="#">U</a></li>
+        <li><a href="#">V</a></li>
+        <li><a href="#">W</a></li>
+        <li><a href="#">X</a></li>
+        <li><a href="#">Y</a></li>
+        <li><a href="#">Z</a></li>
+        <li><a href="#" style="color:#959593;">#</a></li>
+    </ul>
+</div>
+<script>
+    var sliderNav=$("#sliderNav");
+    sliderNav.click(function(e){
+        e.preventDefault();
+    });
+    sliderNav.delegate("li","tap",function(e){
+        //console.log(e.target.tagName);
+        e.preventDefault();
+        var tagName= e.target.tagName;
+        var tagId="#";
+        var offScroll=0;
+        if(tagName=="A"){
+            //console.log("A--"+e.target.text);
+            tagId+= e.target.text;
+            console.log("A---");
+
+        }else if(tagName=="LI"){
+            //console.log("LI--"+e.target.childNodes[0].text);
+            tagId+= e.target.childNodes[0].text;
+            console.log("LI---");
+        }else{
+            return;
+        }
+        offScroll=$(tagId).offset().top;
+        console.log("scrool---"+offScroll);
+        $(document).scrollTop(offScroll-110);
+       // $(document).animate(offScroll-110);
+       // $(document).animate({offScroll:'1000px'});
+    })
+</script>
+</body>
+</html>

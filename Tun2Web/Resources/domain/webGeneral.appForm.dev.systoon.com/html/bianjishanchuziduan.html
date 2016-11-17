@@ -1,0 +1,35 @@
+<div class="wrap">
+    <div class="pagelist">
+        <div class="pagelistCon">
+            <div class="pageLi">
+                <div class="pageFont">
+                    <span>自动审核</span>
+                    <input id="isAutoChackBtn" type="checkbox" class="radio" ng-checked="isAutoCheck" ng-click="checkClick()" />
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pagelist">
+        <p class="listtit">申请表字段</p>
+        <div class="pagelistCon">
+            <div ng-repeat="filed in fileds track by $index | filter:query | orderBy:orderProp" class="pageLi" ng-click="onClick($event,$index)">
+                <a class="pageFont array">
+                    <a class="left delete" ng-show="false|endOrEdit:this" ng-click="removeSub($event,$index)"></a>
+                    <span>{{filed.field_name}}</span>
+                </a>
+            </div>
+
+            <div class="pageLi" ng-click="onClick($event,-1)">
+                <a class="pageFont array">
+                    <span>添加字段</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--<div class="pagelist">-->
+        <!--<div class="pagelistCon center">-->
+            <!--<a href="" class="deleteBtn">删除</a>-->
+        <!--</div>-->
+    <!--</div>-->
+</div>

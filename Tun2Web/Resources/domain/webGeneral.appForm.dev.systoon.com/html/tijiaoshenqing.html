@@ -1,0 +1,47 @@
+<div class="wrap">
+      <assess-input>
+      <div class="pagelist" ng-repeat="item in inputs track by $index">
+        <p class="listtit">{{item.field_name}}</p>
+        <div class="pagelistCon">
+          <input class="txt" placeholder="内容" ng-model="item.field_cont"/> <!---->
+        </div>
+      </div>
+      </assess-input>
+      <assess-single-select>
+      <div class="pagelist" ng-repeat="item in singleSelects track by $index">
+        <p class="listtit">{{item.field_name}}</p>
+        <div class="pagelistCon">
+          <div class="pageLi" ng-repeat="subItem in item.field_option track by $index">
+                <!--<input type="radio" ng-init="item.field_checked[$index]=false" ng-name="item.field_name" class="checkbox" name="checkbox" ng-click="ngChange(item,$index)" ng-checked="item.field_checked[$index]" >-->
+              <input ng-init="item.field_checked[$index]=false" type="checkbox" class="checkbox" ng-model="item.field_checked[$index]" ng-click="ngChange(item,$index)" name="checkbox" >
+              <div class="pageFont">
+              <span>{{subItem}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      </assess-single-select>
+    <assess-multiple-select>
+        <div class="pagelist" ng-repeat="item in multiSelects track by $index">
+        <p class="listtit">{{item.field_name}}</p>
+        <div class="pagelistCon">
+            <div class="pageLi" ng-repeat="subItem in item.field_option track by $index">
+                <input ng-init="item.field_checked[$index]=false" type="checkbox" class="checkbox" ng-model="item.field_checked[$index]" name="checkbox" >
+                <div class="pageFont">
+                    <span>{{subItem}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    </assess-multiple-select>
+    <div class="pagelist btn">
+        <div ng-click="acceptFn($event,0)" class="pagelistCon center" id="submitBtn">
+            <a href="" class="addBtn">完成</a>
+        </div>
+    </div>
+    <!--<div class="pagelist btn">-->
+        <!--<div ng-click="acceptFn($event,1)" class="pagelistCon center">-->
+            <!--<a href="" class="deleteBtn">拒绝</a>-->
+        <!--</div>-->
+    <!--</div>-->
+</div>

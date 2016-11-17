@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tun2Web</title>
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <script src="jquery/jquery-1.11.1.min.js"></script>
+    <script src="../webGeneral.public.dev.systoon.com/Mwap/com/systoon/Mwap.js"></script>
+    <script src="../webGeneral.public.dev.systoon.com/Mwap/com/systoon/app.js"></script>
+    <script src="../webGeneral.public.dev.systoon.com/js/general/RUI.js"></script>
+
+    <link rel="stylesheet" href="jquery/jquery.mobile-1.4.5.min.css">
+    <script src="jquery/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+        h3{
+            word-break:break-all;
+        }
+        .ui-content{ background: #ffffff;}
+        .clearfix:after {
+            visibility: hidden;
+            display: block;
+            content: "";
+            clear: both;
+        }
+        .gallery-entries{
+            list-style:none;
+            padding:0;
+        }
+        .gallery-entries .gallery-item{
+            float: left;
+            margin-right:1%;
+            margin-bottom:2%;
+        }
+        .gallery-entries .gallery-item img{
+            -webkit-box-shadow: #cccccc 0 3px 5px;
+            -moz-box-shadow: #cccccc 0 3px 5px;
+            box-shadow: #cccccc 0 3px 5px;
+            border: 1px solid #999;
+            max-width:100%;
+            width: 80px;
+            height: 80px;
+            border-radius: 10%;
+        }
+
+    </style>
+</head>
+<body>
+    
+<div data-role="page" id="main">
+    <div role="main" class="ui-content">
+        <ul data-role="listview">
+            <div data-role="header" class="ui-header ui-bar-a" role="banner" data-theme="b">
+                <h1 class="ui-title" role="heading" aria-level="2">Native 功能</h1>
+            </div>
+            <li ><a href="#page-takePhoto">访问相机</a></li>
+            <li ><a href="#page-choosePicture">访问相册</a></li>
+
+        </ul>
+    </div>
+    </ul>
+</div>
+
+
+</body>
+<script>
+    RUI.init();
+</script>
+<script type="text/template" id="pageMode">
+    <div data-role="page" id="page-null">
+        <div data-role="header">
+            <h1 id="title"></h1>
+            <a href="#main" data-icon="carat-l" class="ui-btn-left">返回</a>
+        </div><!-- /header -->
+        <div role="main" class="ui-content">
+            <p>
+            <h3 id="info_sync" >同步信息：</h3>
+            <h3 id="info_async" >异步信息：</h3>
+            </p>
+            <p>
+                <img src="img/image.png" alt="image" id="img"  style="display:block;margin:auto; ">
+            </p>
+            <a data-role="button" id="btn" href="#">点击</a>
+        </div><!-- /content -->
+
+    </div><!-- /page -->
+</script>
+</html>

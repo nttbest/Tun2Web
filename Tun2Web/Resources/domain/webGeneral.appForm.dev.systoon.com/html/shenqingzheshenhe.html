@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>编辑字段</title>
+    <style>
+        body{margin: 0;background: #ebebeb;color:#000;font:14px microsoft yahei;}
+        *{padding: 0;margin: 0;outline: none}
+        a{text-decoration: none;cursor: none}
+        .wrap{width: 100%;color: #000;background: #eeeeee;padding: 0 0 100px 0;}
+        .pagelist{overflow: hidden;zoom:1;}
+        .btn{margin:15px 0;}
+        .pagelist.noMaBo{margin: 0;border-bottom: solid 1px #dddee3;}
+        .pagelist.noMaBo .pagelistCon{border-top:none!important;border-bottom:none!important;}
+        .pagelist.noMaBot{margin:15px 0 0 0;}
+        .pagelist .pagelistCon{background: #FFFFFF;border-bottom: solid 1px #dddee3;overflow: hidden;zoom:1;}
+        .pagelist .pagelistCon.center{text-align: center;}
+        .pagelist .pageLi{padding:8px 0;margin:0 0 0 15px;border-bottom: solid 1px #dddee3;overflow:hidden;zoom:1;}
+        .pagelist .pageLi:last-child{border-bottom: none;}
+        .pageFont{margin-right: 15px;display:block;overflow: hidden;zoom:1;}
+        .pageFont .graytit{color:#838383;}
+        .yellowBg{background:#fafaee;overflow: hidden;zoom:1;}
+        .yellowBg .pageLi{border-bottom:solid 1px #dddee3!important}
+        .lightyellowBg{background:#fcfcf4!important;}
+        .deleteBtn{color:#ff3b2f;font:18px/44px microsoft yahei;}
+        .addBtn{color:#007aff;font:18px/44px microsoft yahei;}
+        .listtit{padding:10px 0 0 0;margin: 15px 0 0 15px;font:14px/24px microsoft yahei;color:#838383;border-bottom: solid 1px #dddee3;}
+        .header{background:#3275cd;font:14px/44px microsoft yahei;color:#fff;text-align: center;display: -webkit-box;-webkit-box-sizing: border-box;-webkit-box-pack: justify;}
+        .header a{display: -webkit-box;color: #fff;}
+        .conHeader{width: 100%;height:78px;margin:15px 0;border-top:1px solid #dddee3 ;border-bottom: 1px solid #dddee3;background: #fff;overflow: hidden;}
+        .conHeader dl{float:left;overflow: hidden;}
+        .conHeader dl dt{height: 56px;width: 56px;float: left;margin: 11px 15px 11px 15px;}
+        .conHeader dl dt img{height: 56px;width: 56px;border-radius: 50%;}
+        .conHeader dl dd{overflow: hidden;}
+        .conHeader dl dd .chName{padding: 16px 0 0 0;font-size: 18px;}
+        .conHeader dl dd .promote{width: 180px;height:23px;padding: 4px 0 0 0;color: #929292;font-size: 14px;white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; overflow:hidden;}
+        .conHeader .chTime{float: right;padding: 10px 15px 0 0;color: #929292;font-size: 12px;}
+        .pagelist .pageLi.noBorBottom{border-bottom: none !important;}
+        .grayBg{color: #333 !important;}
+    </style>
+</head>
+<body>
+
+<script src="../../webGeneral.public.dev.systoon.com/Mwap/com/systoon/Mwap.js"></script>
+<script>
+
+////          Mwap初始化
+                Mwap.init();
+                //var mwapData;
+                Mwap.events.on(Mwap.nativeTypes.loadParams,function(e){
+                	console.log("数据"+JSON.stringify(e));
+				   window.mwapData = e.value.data;
+				   console.log('joineSettingAnswer数据'+mwapData);
+				   applicationResult(mwapData);
+				    
+				});
+
+            
+          function applicationResult(mwapData){
+              var resultObj = JSON.parse(mwapData.joineSettingAnswer).result;
+              console.log('表单数据'+resultObj);
+              var all_str='';
+    	      var start_str='<div class="wrap">';
+    	      var conHeaser_str= '<p class="listtit">交换名片申请审核内容</p>';
+    	      //var end_str='<div class="pagelist btn"><div class="pagelistCon center" id="acceptFriendBtn"><a href="javascript:0" class="addBtn">接受</a></div></div><div class="pagelist btn"><div class="pagelistCon center" id="refuseFriendBtn"><a href="javascript:0" class="deleteBtn">拒绝</a></div></div></div>';
+    	      var opt_str='';
+              var temp = resultObj.fileds;
+    	      for(var i=0;i<temp.length;i++){
+    	      	  var item = temp[i];
+    	          if(item.field_type == "input"){
+    	                opt_str+='<div class="pagelist noMaBo">';
+    	                opt_str+=   '<div class="pagelistCon lightyellowBg">';
+    	                opt_str+=       '<div class="yellowBg">';
+    	                opt_str+=           '<div class="pageLi">';
+    	                opt_str+=               '<div class="pageFont">';
+    	                opt_str+=                   '<p class="graytit">'+item.field_name+'</p>';
+    	                opt_str+=               '</div>';
+    	                opt_str+=           '</div>';
+    	                opt_str+=       '</div>';
+    	                opt_str+=       '<div class="pageLi noBorBottom" id="pageFont">';
+    	                opt_str+=           '<div class="pageFont">';
+    	                opt_str+=               '<span class="graytit grayBg">'+item.field_cont+'</span>';
+    	                opt_str+=           '</div>';
+    	                opt_str+=       '</div>';
+    	                opt_str+=   '</div>';
+    	                opt_str+='</div>';
+    	          }else{
+                      //console.log("+++",item.field_checked);
+    	                opt_str+='<div class="pagelist noMaTop">';
+    	                opt_str+=   '<div class="pagelistCon lightyellowBg">';
+    	                opt_str+=       '<div class="yellowBg">';
+    	                opt_str+=           '<div class="pageLi">';
+    	                opt_str+=               '<div class="pageFont">';
+    	                opt_str+=                   '<p class="graytit">'+item.field_name+'</p>';
+    	                opt_str+=               '</div>';
+    	                opt_str+=           '</div>';
+    	                opt_str+=       '</div>';
+    	                for(var j=0;j<item.field_option.length;j++){
+    	                    opt_str+='<div class="pageLi noBorBottom" id="pageFont">';
+    	                    opt_str+=   '<div class="pageFont">';
+                            if(item.field_checked[j] == true){
+                                //console.log("|||||||||||||",item.field_checked);
+                                opt_str+=       '<span class="graytit grayBg">'+item.field_option[j]+'</span>';
+                            }else{
+                                //console.log("{{{{{{}}",item.field_checked);
+                                opt_str+=       '<span class="graytit">'+item.field_option[j]+'</span>';
+                            }
+    	                    opt_str+=   '</div>';
+    	                    opt_str+='</div>';
+    	                }
+    	                opt_str+=   '</div>';
+    	                opt_str+='</div>';
+    	          }
+    	      }
+    	      all_str=start_str+conHeaser_str+opt_str;
+    	      document.getElementsByTagName('body')[0].innerHTML=all_str;
+          }
+//   渲染页面结束
+//applicationResult();
+
+</script>
+
+</body>
+</html>

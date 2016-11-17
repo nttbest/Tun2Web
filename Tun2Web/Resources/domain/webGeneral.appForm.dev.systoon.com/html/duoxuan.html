@@ -1,0 +1,35 @@
+<div>
+    <div class="pagelist">
+        <div class="pagelistCon">
+            <div class="pageLi">
+                <div class="pageFont">
+                    <input class="smalltxt" placeholder="字段名称" ng-model="subData[data.currentSub].field_name">
+                </div>
+            </div>
+            <div class="pageLi">
+                <div class="pageFont">
+                    <span>是否为必填项</span><!--{{subData[data.currentSub].isRequired}}-->
+                    <input type="checkbox" class="radio" ng-checked="isRequired" ng-model="subData[data.currentSub].isRequired">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pagelist">
+        <div class="pagelistCon center" ng-click="onAdd($event)">
+            <a href="#" class="addBtn">添加多个选项</a>
+        </div>
+    </div>
+    <div class="pagelist">
+        <div class="pagelistCon" id="addlist">
+            <div class="pageLi" ng-repeat="item in subData[data.currentSub].field_option track by $index">
+                <div class="pageFont" ng-init="p_index=$index">
+                    {{$index}}
+                    <input class="smalltxt" placeholder="请输入内容" ng-model="subData[data.currentSub].field_option[$index]"/>
+                    <a class="right delete" ng-click="onRemove($event,$index)"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

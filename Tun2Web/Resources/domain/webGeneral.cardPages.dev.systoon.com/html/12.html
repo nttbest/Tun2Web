@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="author" content="Tencent-TGideas">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <title>Employee card</title>
+    <style type="text/css" rel="stylesheet">
+        body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+            padding: 0;
+            margin: 0;
+            font-family: "microsoft yahei";
+        }
+        html, body {
+            /*  overflow-y:scroll;
+              overflow-x:hidden;*/
+            -webkit-overflow-scrolling:touch;
+            background: #EAEAEA;
+        }
+        .wrapper{width:100%; height: 100%; margin-bottom: 30px;}
+        .content {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        /*layout*/
+        .layout {
+            width: 100%;
+            background: #F9F9EA;
+            border-top: 1px solid #dddee3;
+            border-bottom: 1px solid #dddee3;
+            margin-bottom: 30px;
+        }
+
+        .layoutPerson {
+            height: 64px;
+            border-bottom: 1px solid #dddee3;
+            margin-bottom: 15px;
+            padding: 0 0 20px 10px;
+        }
+
+        .headImg {
+            width: 44px;
+            height: 44px;
+            background: border-box;
+            margin: 20px 16px 0 0;
+            float: left;
+        }
+
+        .headImg img {
+            width: 44px;
+            height: 44px;
+        }
+
+        .personJob {
+            float: left;
+            margin: 22px 0 15px 0;
+        }
+
+        .personName {
+            font-size: 16px;
+            font-weight: 700;
+            font-family: "微软雅黑";
+            margin-right: 8px;
+        }
+
+        .personInfor {
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .personP {
+            font-size: 14px;
+        }
+
+        .layoutList {
+            overflow: hidden;
+            margin: 15px;
+            background: #FFF;
+            border: 1px solid #dddee3;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .personList {
+            font-size: 14px;
+        }
+
+        .personList p {
+            line-height: 172%;
+        }
+
+        .personList span {
+            margin-right: 15px;
+        }
+
+        .cardSelect a {
+            width: 100%;
+            height: 44px;
+            text-align: center;
+            font-size: 17px;
+            line-height: 44px;
+            display: block;
+            background: #FFF;
+            border: 1px solid #dddee3;
+            margin-top: 15px;
+            cursor:pointer;
+        }
+
+        .accept {
+            color: #007AFF;
+        }
+
+        .reject {
+            color: #FF3B2F;
+        }
+        .text-overflow{
+            word-break: break-all;
+        }
+        .personList .text-overflow span:first-of-type{
+            min-width: 24%;
+            float: left;
+            text-align: right;
+        }
+        .personList .text-overflow span:last-of-type{
+            display: block;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="content">
+        <div class="layout" id="layout">
+        </div>
+        <div class="cardSelect" id="cardSelect">
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="../../webGeneral.public.dev.systoon.com/Mwap/com/systoon/Mwap.js"></script>
+<script type="text/javascript">
+    Mwap.init();
+    var toonKey={};
+    Mwap.events.on(Mwap.nativeTypes.loadParams,function(e){
+       // alert(JSON.stringify(e.value.data));
+        toonKey = e.value.data;
+        init();
+    });
+    function init(){
+        str=toonKey;
+        var cardData={
+            "authKey":str.authKey,
+            "nameSpace":str.nameSpace,
+            "bizKey":{
+                "cardId": str.staffId,
+                "orgId": str.orgId,
+                "name": str.name
+            }
+        };
+        cardData.authKey=JSON.stringify(cardData.authKey);
+        cardData.bizKey=JSON.stringify(cardData.bizKey);
+        cardData.nameSpace=JSON.stringify(cardData.nameSpace);
+        cardData=JSON.stringify(cardData);
+        var vcardData = toonKey.vcard?toonKey.vcard:'';
+        var objHtml = "";
+        for (var i = 0; i < vcardData.length; i++) {
+            var vcardValue = vcardData[i].fieldValue;
+            var vcardObj = vcardData[i].displayName;
+            var obj = "<p class='text-overflow'><span>" + vcardObj + ":</span><span>" + vcardValue + "</span></p>";
+            objHtml += obj;
+        }
+        var avatarId = toonKey.avatarId ? toonKey.avatarId : '../images/default.png';
+        var cardStr = '';
+        var contentStr = '</div><div class="layoutPerson"><dl><dt class="headImg""><img src="' + avatarId + '"></dt><dd class="personJob"><p class="personInformation"><span class="personName">' + toonKey.name + '</span><span class="personInfor" >' + toonKey.position + '</span></p><p class="personP">' + toonKey.orgName + '</p></dd></dl></div>';
+        var listStr = '<div class="layoutList"> <div class="personList" >' + objHtml + '</div></div>';
+        cardStr = contentStr + listStr;
+        document.getElementById("layout").innerHTML = cardStr;
+        var lastStr = ' <a class="accept" id="accept">接受</a><a class="reject" id="reject">拒绝</a>';
+        document.getElementById("cardSelect").innerHTML = lastStr;
+        /*判断为空*/
+        var oDiv=document.getElementsByClassName("layoutList").item(0);
+        if(vcardData==""){
+            oDiv.style.display="none";
+        }else{
+            oDiv.style.display="block";
+        }
+        //  原生ajax封装
+        var RAjax=function(options){
+            options = options || {};
+            options.type = (options.type || "GET").toUpperCase();
+            options.dataType = (options.dataType || "text").toUpperCase();;
+            options.cache=options.cache||"true ";
+            var params = formatParamsB(options.data);
+            var responseFields={
+                "XML": "responseXML",
+                "TEXT": "responseText",
+                "JSON": "responseJSON"
+            }
+            //创建 - 非IE6 - 第一步
+            if (window.XMLHttpRequest) {
+                var xhr = new XMLHttpRequest();
+            } else { //IE6及其以下版本浏览器
+                var xhr = new ActiveXObject('Microsoft.XMLHTTP');
+            }
+            //xhr.responseType=options.dataType;//'text'：返回类型为字符串，这是默认值。'arraybuffer'：返回类型为ArrayBuffer。'blob'：返回类型为Blob。'document'：返回类型为Document。'json'：返回类型为JSON object。
+            if(!options.cache){ //禁用缓存
+                xhr.setRequestHeader("If-Modified-Since","0");
+            }
+            //接收 - 第三步
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4) {  //请求完成，响应就绪
+                    //alert("Mwap.xhr.status:"+xhr.status)
+                    // var result = xhr.responseType == "text" ? xhr.responseText : xhr.responseXML; //返回值类型
+                    var result = xhr[responseFields[options.dataType]]; //返回值类型
+                    if (((xhr.status >= 200 && xhr.status < 300) || xhr.status == 304) && typeof options.success == 'function') { //成功
+                        options.success && options.success(result, xhr.status);
+                    } else if (xhr.status >= 400 && xhr.status < 500) { //客户端出错，404啊神马的
+                        options.error && options.error(xhr, xhr.status);
+                    } else if (xhr.status >= 500) { //服务器端出错
+                        options.error && options.error(xhr, xhr.status);
+                    }else{
+                        options.error && options.error(xhr, xhr.status);
+                    }
+                }
+            }
+            //连接 和 发送 - 第二步
+            if (options.type == "GET") {
+                xhr.open("GET", options.url + "?" + params, true);
+                xhr.send(null);
+            } else if (options.type == "POST") {
+                xhr.open("POST", options.url, true);
+                //设置表单提交时的内容类型
+                xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;charset=utf-8");
+                xhr.send(params);
+            }
+            //格式化参数
+            function formatParamsA(data) {
+                var arr = [];
+                for (var name in data) {
+                    arr.push(encodeURIComponent(name) + "=" + encodeURIComponent(data[name]));
+                }
+                arr.push(("v=" + Math.random()).replace("."));
+                return arr.join("&");
+            }
+            function formatParamsB(obj) {
+                var query = '', name, value, fullSubName, subName, subValue, innerObj, i;
+                for(name in obj) {
+                    value = obj[name];
+                    if(value instanceof Array) {
+                        for(i=0; i<value.length; ++i) {
+                            subValue = value[i];
+                            fullSubName = name + '[' + i + ']';
+                            innerObj = {};
+                            innerObj[fullSubName] = subValue;
+                            query += param(innerObj) + '&';
+                        }
+                    }
+                    else if(value instanceof Object) {
+                        for(subName in value) {
+                            subValue = value[subName];
+                            fullSubName = name + '[' + subName + ']';
+                            innerObj = {};
+                            innerObj[fullSubName] = subValue;
+                            query += param(innerObj) + '&';
+                        }
+                    }
+                    else if(value !== undefined && value !== null){
+                        query += encodeURIComponent(name) + '=' + encodeURIComponent(value) + '&';
+                    }
+
+                }
+                return query.length ? query.substr(0, query.length - 1) : query;
+            };
+        };
+        //  原生ajax封装结束
+
+        //格式化数据成服务器需要的map,JSON
+        /*toonKey = Mwap.toon.formatDataForSave(cardData);
+         console.log(cardData);*/
+        var serverUrl = '';
+        Mwap.events.trigger(Mwap.eventTypes.dnsResolve,{nameSpace:str.nameSpace,device:"iphone6",source:"15",dns:"api.org.systoon.com"});
+        Mwap.events.once(Mwap.eventTypes.dnsResolve,function(e){
+            serverUrl=e.value;
+            serverUrl=JSON.parse(serverUrl).data.IP;
+            console.log(serverUrl);
+            var acUrl = serverUrl + "/acceptReceiveCard";
+            var reUrl = serverUrl + "/refuseReceiveCard";
+           // alert(acUrl);
+            //接受
+            document.getElementById("accept").onclick = function () {
+                RAjax({
+                    type: "post",
+                    url: acUrl,
+                    data: {'toonKey':cardData},
+                    dataType:"text",
+                    success: function (e)
+                    {
+                        //关闭webview
+                        Mwap.events.trigger(Mwap.eventTypes.closeWebview, {
+                            nameSpace: "demo.systoon.com",
+                            device: "iphone6",
+                            resultType: "1"
+                        });
+                    },
+                    error: function (e) {
+                    }
+                });
+                console.log(cardData);
+            };
+            //拒绝
+            document.getElementById("reject").onclick = function () {
+                RAjax({
+                    type: "post",
+                    url: reUrl,
+                    data: {'toonKey':cardData},
+                    dataType:"text",
+                    success: function (e) {
+                        //关闭webview
+                        Mwap.events.trigger(Mwap.eventTypes.closeWebview, {
+                            nameSpace: "demo.systoon.com",
+                            device: "iphone6",
+                            resultType: "0"
+                        })
+                    },
+                    error: function (e) {
+                    }
+                });
+                console.log(cardData);
+            };
+        });
+    }
+    /*var e = document.createEvent('Event');
+    e.data={"orgId":"76475","position":"夫妇","staffId":"76591","avatarId":"","authKey":{"platformVersion":"18","platform":"android","userToken":"db087b6b-fe8c-4bcf-bb54-d41a87da0842","ticket":"B8F509D759ACA807969975D375A7D5FC","appVersion":"2.6","deviceId":"99000477518827",
+    "userId":"3265"},"name":"豆腐块","nameSpace":"webGeneral.cardPages.dev.systoon.com","orgName":"天龙八部","vcard":[]};
+    e.initEvent(Mwap.nativeTypes.loadParams,false,true);
+    document.dispatchEvent(e);*/
+    /*{"position":"在一起就业","nameSpace":"webGeneral.cardPages.dev.systoon.com","staffId":"76529","orgId":"76377","vcard":[{"fieldValue":"但还是有点儿冷水浸泡的","displayName":"岗位"},{"fieldValue":"在一起时代","displayName":"地址"},{"fieldValue":"8888888","displayName":"QQ"},{"fieldValue":"在一起时刻准备","displayName":"备注"}],"authKey":{"deviceId":"585E6343-F486-4E07-AD46-B83DD559FFAF","ticket":"2F33C7CC00BDA7C770271C4A2D1CFEAD","appVersion":"2.6","userId":"44575","platform":"iOS","platformVersion":"8.2","userToken":"59caed24-d86f-43a1-b178-4442e5326360"},"orgName":"看看","name":"可口可乐了"}*/
+</script>
+</body>
+</html>

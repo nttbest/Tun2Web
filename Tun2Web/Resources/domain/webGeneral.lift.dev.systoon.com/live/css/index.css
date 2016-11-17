@@ -1,0 +1,259 @@
+@charset "utf-8";
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,input,table,tbody,p,th,td,em,ul,li{-webkit-text-size-adjust:none; margin: 0; padding: 0; border: none; list-style: none;-webkit-tap-highlight-color:rgba(0,0,0,0);
+    font-family:"Microsoft Yahei","微软雅黑",Tahoma,Arial,Helvetica,STHeiti; }
+html {font-family: "microsoft yahei";-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; font-size: 62.5%; height: 100%;}
+body { margin: 0; font-size: 1.4rem; line-height: 1.5; color: #333333; height: 100%; overflow-x: hidden; -webkit-overflow-scrolling: touch;height: 100%;background: #EEEEEE;}
+
+.header{background:#007aff; width:100%;display:flex;display:-webkit-flex;justify-content:space-between;align-items:center;-webkit-box-pack: justify;overflow: hidden;zoom: 1;position: fixed;top: 0;z-index: 999;height:40px;line-height:40px;color: #fff;}
+.header a{text-decoration: none;color:#fff;display: inline-block;margin-top:6px;margin-left:7px;}
+.header .back img{width:9px;}
+.header .back .parent-title{margin-left: 5px;}
+.header span{font-size:16px;}
+.header .header-right{
+    margin-right:12px;
+}
+.route-body{
+    min-width: 312px;
+}
+.live-body{width: 100%;display: flex;display: -webkit-flex;background: #fff;flex-flow:wrap column;border-bottom: 1px solid #DDDEE3}
+.live-body .live-list{
+    height:68px;
+    line-height: 68px;
+    width: 100%;
+    min-width: 312px;
+    border-top: 1px solid #e6e6e6;
+}
+
+.live-list .item-img{
+    height: 53px;
+    width: 53px;
+    padding: 7px 9px;
+    float: left;
+    border: 1px solid #fff;
+    margin-top: -1px;
+}
+.live-body .live-list:first-child .item-img{
+    border:none;
+}
+.live-list .item-img img{
+    height: 53px;
+    width: 53px;
+    float: left;
+}
+.live-list .item-title{
+    display: inline-block;
+    font-size: 16px;
+    color: #000000;
+}
+.live-list .goto{
+    float: right;
+    margin-right:15px;
+}
+.live-list .goto img{
+    width: 10px;
+}
+
+.live-lickedcar{
+    width: 100%;
+    padding-left: 8px;
+    min-height: 135px;
+    display: flex;
+    flex-wrap:wrap;
+    display: -webkit-flex;
+    background: #ffffff;
+    min-width: 312px;
+    justify-content:flex-start;
+    border-bottom: 1px solid #DDDEE3;
+}
+.live-lickedcar .lickecar-info{
+    width: 90px;
+    padding-top:13px;
+    text-align: center;
+}
+.live-lickedcar .lickecar-info img{
+    width: 60px;
+    height: 60px;
+    padding: 12px 15px 2px;
+}
+.lickedcar-addbtn{
+    width: 92%;
+    margin: 30px 4%;
+}
+.lickedcar-addbtn .btn{
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    background: #3275CD;
+    color: #ffffff;
+    font-size: 16px;
+}
+.lickedcar-list{
+    width: 100%;
+    margin-top: 30px;
+    background: #ffffff;
+    border-top: 1px solid #DDDEE3;
+    border-bottom: 1px solid #DDDEE3;
+}
+.lickedcar-list ul{
+    width: 100%;
+}
+.lickedcar-list ul li{
+    width: 100%;
+    height: 95px;
+    border-bottom: 1px solid #DDDEE3;
+    display: flex;
+    display: -webkit-flex;
+}
+.lickedcar-list ul li:last-child .lickedcar-item-img{
+    padding-bottom: 17px;
+}
+.lickedcar-list ul li .lickedcar-item-img{
+    width: 60px;
+    height: 60px;
+    padding: 18px 13px 18px 10px;
+    background: #ffffff;
+}
+.lickedcar-list ul li .lickedcar-item-img img{
+    width: 60px;
+    height: 60px;
+}
+.lickedcar-list ul li .lickedcar-item-info{
+    padding-top:18px;
+}
+.lickedcar-item-info-title{
+    font-size: 17px;
+    color: #000000;
+    line-height: 17px;
+}
+.lickedcar-item-info-title span{
+    margin-left: 12px;
+}
+.lickedcar-item-info-num{
+    font-size: 14px;
+    color: #838383;
+    line-height: 14px;
+    margin-top: 9px;
+}
+.lickedcar-item-info-xianhao{
+    font-size: 14px;
+    color: #838383;
+    line-height: 14px;
+    margin-top: 6px;
+}
+.lickedcar-item-info-xianhao span{
+    margin-left: 10px;
+    color: #000000;
+    background: #EAF1FA;
+    border-radius: 2px;
+    width: 14px;
+    line-height: 14px;
+    display: inline-block;
+    text-align: center;
+}
+
+
+.lickedcar-type,.add-car{
+    width: 100%;
+    margin-top:15px;
+    border-top:1px solid #DDDEE3;
+    border-bottom:1px solid #DDDEE3;
+    background: #ffffff;
+}
+.lickedcar-type ul{
+    margin-left: 15px;
+
+}
+.lickedcar-type ul li{
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    font-size: 16px;
+    border-bottom: 1px solid #DDDEE3;
+    display: flex;
+    display: -webkit-flex;
+    justify-content:space-between;
+}
+.lickedcar-type ul li .selected-type{
+    display: inline-block;
+    height: 44px;
+    width:15px;
+    margin-right: 15px;
+    background: url("../assets/Shape 4.png")no-repeat right 14px;
+    background-size: 15px auto;
+}
+.lickedcar-type ul li:last-child{
+    border-bottom:none;
+}
+.hide{
+    display: none;
+}
+.add-car-info{
+    width: 100%;
+    overflow: hidden;
+    background: #ffffff;
+
+}
+.add-car-info li{
+    display: flex;
+    display: -webkit-flex;
+    height: 44px;
+    line-height: 44px;
+    font-size: 16px;
+    border-top:1px solid #dbdbdb;
+    overflow: hidden;
+    margin: 0 0 0 15px;
+    justify-content: space-between;
+}
+.add-car-info li:first-child{
+    border-top:none;
+}
+
+.add-car-info li label {
+    float: left;
+    width: 70px;
+    color: #000000;
+    text-align: left;
+}
+.add-car-info li .car-city{
+    border: none;
+    background: #ffffff;
+    color: #3275CD;
+    font-weight: bold;
+    padding: 11px 7px;
+
+}
+.add-car-info li .div-input {
+   padding-right:5%;
+}
+.add-car-info li .div-input input{
+    border: none;
+    color: #838383;
+    padding: 1.1rem 0;
+}
+.add-car-info li a {
+    display: inline-block;
+    height: 44px;
+    line-height: 44px;
+    position: absolute;
+    right: 5%;
+    color: #838383;
+    text-decoration: none
+}
+.add-car-info li img{
+    width: 9px;
+    padding-left: 8px;
+}
+/*.live-lickedcar .lickecar-info .lickecar-info-img{*/
+    /*width: 60px;*/
+    /*height: 60px;*/
+    /*margin-top: 13px;*/
+    /*padding: 12px 15px;*/
+/*}*/
+/*.live-lickedcar .lickecar-info img{*/
+    /*width: 60px;*/
+    /*height: 60px;*/
+/*}*/
+/*.live-lickedcar .lickecar-info .lickecar-info-title{*/
+    /*font-size: 14px;*/
+    /*color: #000000;*/
+/*}*/

@@ -1,0 +1,22 @@
+<script>
+    function photolibraryCallback(imageData) {
+        var img = createImageWithBase64(imageData);
+        document.getElementById("photolibraryWrapper").appendChild(img);
+    }
+    function createImageWithBase64(imageData) {
+        var img = new Image();
+        img.src = "data:image/jpeg;base64," + imageData;
+        img.style.width = "50px";
+        img.style.height = "50px";
+        return img;
+    }
+</script>
+<p style="text-align:center;padding:20px;">
+    <a href="js-call://photolibrary/photolibraryCallback">相册单选</a>&nbsp;&nbsp;
+</p>
+
+<fieldset>
+    <legend>相册单选</legend>
+    <div id="photolibraryWrapper">
+    </div>
+</fieldset>
